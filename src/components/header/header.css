@@ -1,0 +1,119 @@
+.header {
+    padding: 1.55rem 0;
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-cont .header-links {
+    position: relative;
+}
+
+.header-cont .header-links a {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header-cont .header-links a:not(:first-child) {
+    margin-left: 2.5rem
+}
+
+.header .hamburger {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.header .hamburger div {
+    background: white;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 6px;
+}
+
+.header .hamburger_ {
+    right: 12px;
+    left: auto;
+    top: 20px;
+}
+
+.header .hamburger_ div {
+    margin-bottom: 0;
+}
+
+.header .hamburger_ div:first-child {
+    transform: rotate(45deg);
+}
+
+.header .hamburger_ div:last-child {
+    transform: rotate(135deg) translate(-1px, 2px);
+}
+.header-btn
+{
+    background-color: 
+    rgba(0, 122, 255, 1);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5.83px;
+    cursor: pointer;
+}
+@media screen and (max-width:767px) {
+    .header .hamburger {
+        display: block;
+    }
+
+    .header {
+        padding: 1.2rem 0;
+    }
+
+    .header-cont {
+        justify-content: center;
+    }
+
+    .header-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: 10;
+        background: rgb(0 0 0 / 50%);
+    }
+
+    .header-cont .header-links {
+        width: 0;
+        height: 100%;
+        padding: 1.6rem 0;
+        background-color: #101010;
+        transition: padding .4s ease, width .4s ease;
+        overflow-x: hidden;
+    }
+
+    .header-cont .header-links a {
+        margin-left: 0 !important;
+        font-size: 16px;
+        display: block;
+        border-bottom: 1px solid #1e1e1e;
+        padding: 10px 1.6rem;
+        white-space: nowrap;
+    }
+
+    .sidebar_width {
+        width: 200px !important;
+    }
+
+    .sidebar_display {
+        display: block !important;
+    }
+    .header-btn{
+        display: none;
+    }
+
+}

@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background: #000;
+  color: #FFFFFF;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+input:is(:active, :focus) {
+  outline: none;
+}
+
+
+.wrapper {
+  transition: padding .3s ease, max-width .3s ease;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1140px;
+}
+
+.row,
+.full {
+  width: 100% !important;
+}
+
+.box {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    max-width: 1320px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .box {
+    padding: 30px 0;
+  }
+}
+.ibar-scroll {
+  display: flex;
+  overflow: hidden;
+  height: 2.625rem; /* Equivalent to 42px */
+  width: calc(134px * 12);
+  animation: ibar-scroll 18s linear infinite;
+}
+
+@keyframes ibar-scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-194px * 6));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ibar-scroll {
+    height: 42px; /* Adjust height for smaller screens */
+    width: calc(134px * 12);
+    animation: ibar-scroll-mobile 18s linear infinite;
+  }
+
+  @keyframes ibar-scroll-mobile {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(calc(-134px * 6));
+    }
+  }
+}

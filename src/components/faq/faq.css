@@ -1,0 +1,86 @@
+/* Global styles */
+.faqs-container {
+    padding: 3rem 2rem;
+  }
+  
+  .faqs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .faqs-header {
+    font-size: 32px;
+  }
+  
+  .faqs-description {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .faqs-content {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* FAQ Item styles */
+  .faq-item {
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 18px;
+  }
+  
+  .faq-item.active,
+  .faq-item:hover {
+    background-color: var(--accent-secondary);
+  }
+  
+  .faq-item-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .faq-icon {
+    transition: transform 0.3s;
+  }
+  
+  .faq-icon.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .faq-question {
+    font-size: 1.125rem; /* Equivalent to Tailwind's text-lg */
+  }
+  
+  .faq-answer {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1rem; /* Equivalent to Tailwind's text-base */
+    margin-top: 0.75rem;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .faqs-container {
+      padding: 3rem 1rem;
+    }
+  
+    .faqs-wrapper {
+      flex-direction: column;
+    }
+  
+    .faqs-content {
+      max-width: 100%;
+    }
+  }
+  
+  /* Custom properties for colors */
+  :root {
+    --accent-secondary: #3490dc; /* Example color, adjust according to your design */
+  }
+  

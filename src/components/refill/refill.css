@@ -1,0 +1,220 @@
+.refill-cont {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.refill-cont h1 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-right: 2.3rem;
+}
+
+.refill-cont h1 span:last-child {
+    background: linear-gradient(90deg, #F7F7F7 0%, #DAB574 19.62%, #F3A42D 43.58%, #F87D34 66.49%, #EC835F 83.16%, #D1A49A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.refill-cont img {
+    width: 330px;
+}
+
+.refill-cont2 .col-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.refill-cont2 .refill-imgs {
+    background: #303030;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px 0 0 60px;
+    padding: 3rem 4rem;
+    position: relative;
+}
+
+.refill-cont2 .refill-imgs>div {
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.refill-cont2 .refill-imgs>div img {
+    width: 100%;
+}
+
+.refill-cont2 .refill-imgs .still-water {
+    width: 120px;
+    height: 120px;
+    background: #1e202c;
+    transform: translate(30px, 20px);
+}
+
+.refill-cont2 .refill-imgs .yellow_tail {
+    width: 70px;
+    height: 70px;
+    background: #FEC530;
+    margin: 0 auto;
+    transform: translate(-11px, 6px);
+    margin-top: 23px;
+}
+
+.refill-cont2 .refill-imgs .jack {
+    width: 160px;
+    height: 160px;
+    background: #1B1B1B;
+    transform: translate(0, 0px)
+}
+
+.refill-cont2 .refill-imgs .jameson {
+    width: 80px;
+    height: 80px;
+    background: #214F3E;
+    margin: 0 auto;
+    transform: translate(-68px, 0px);
+    margin-top: 25px;
+}
+
+.refill-cont2 .refill-imgs .absolut {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+    height: 160px;
+    background: #FFFFFF;
+    transform: translate(-70px, 46px);
+}
+
+.refill-cont2 .refill-imgs .glen {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    height: 160px;
+    background: #49413F;
+    transform: translate(-70px, -110px);
+}
+
+.refill-cont2 .refill-text {
+    background-color: #171818;
+    border-radius: 0 60px 60px 0;
+    padding: 6rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.refill-cont2 .refill-text p {
+    background: linear-gradient(165deg, #F7F7F7 44%, #DAB574 19.62%, #F3A42D 43.58%, #F87D34 66.49%, #EC835F 83.16%, #D1A49A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    max-width: 314px;
+}
+
+@media screen and (max-width:992px) {
+    .refill-cont2 .refill-text {
+        padding: 3rem;
+    }
+
+    .refill-cont2 .refill-imgs {
+        padding: 3rem 2.5rem;
+    }
+
+    .refill-cont2 .refill-imgs .still-water {
+        transform: translate(-6px, 20px);
+    }
+
+    .refill-cont2 .refill-imgs .absolut {
+        transform: translate(-26px, 46px);
+    }
+
+    .refill-cont2 .refill-imgs .jack {
+        transform: translate(-15px, 0px);
+    }
+
+    .refill-cont2 .refill-imgs .glen {
+        transform: translate(-25px, -110px);
+    }
+
+    .refill-cont2 .refill-imgs .jameson {
+        transform: translate(-32px, 0px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .refill-cont2 .mb_4 {
+        margin-bottom: 2rem;
+    }
+
+    .refill-cont2 .refill-imgs .still-water {
+        width: 100px;
+        height: 100px;
+    }
+
+    .refill-cont2 .refill-imgs .yellow_tail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .refill-cont2 .refill-imgs .jack {
+        width: 140px;
+        height: 140px;
+    }
+
+    .refill-cont2 .refill-imgs .jameson {
+        width: 70px;
+        height: 70px;
+    }
+
+    .refill-cont2 .refill-imgs .absolut {
+        width: 140px;
+        height: 140px;
+    }
+
+    .refill-cont2 .refill-imgs .glen {
+        width: 140px;
+        height: 140px;
+    }
+
+    .refill-cont2 .refill-imgs {
+        border-radius: 30px 30px 30px 30px;
+        margin-bottom: 2rem;
+    }
+
+    .refill-cont2 .refill-text {
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    .refill-cont2 .refill-text p {
+        max-width: 100%;
+        font-size: 30px;
+    }
+
+    .refill-cont2.d-flex {
+        justify-content: center;
+    }
+
+    .refill-cont2 .refill-imgs {
+        padding-bottom: 1rem;
+    }
+
+    .refill-cont {
+        flex-direction: column;
+        margin-bottom: 1.6rem;
+    }
+
+    .refill-cont img {
+        width: 230px;
+    }
+
+    .refill-cont h1 {
+        font-size: 40px;
+        margin-right: 0;
+    }
+}
