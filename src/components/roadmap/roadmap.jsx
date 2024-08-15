@@ -27,7 +27,6 @@ const RoadMap = () => {
                         </div>
                         <div className="col-12 col-md-6">
                             <div className='roadmap-card mb d-flex' style={{position:'relative'}}>
-                                <img className='feature_tokenimage' src={logotoken} />
                                 
                                 <div > 
                                     <h2>Easy Wallet Integration</h2>
