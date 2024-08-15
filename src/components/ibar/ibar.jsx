@@ -8,16 +8,18 @@ import img6 from '../../assets/insidebitcoin.svg.png'
 
 import "./ibar.css";
 
-const data = [img1, img2, img3  , img4 , img5 , img6 , img1];
+const data = [img1, img2, img3  , img4 , img5 , img6 , img1 , img2, img3  , img4 , img5 , img6 ];
 
 const Ibar = () => {
   return (
     <div className="ibar-container">
+          <h1 className="ibar-heading">
+           featured in
+          </h1>
       <div className="ibar-wrapper">
+
         <div className="ibar-content">
-          <p className="ibar-heading">
-            We are featured in
-          </p>
+       
           <div className="ibar-scroll-wrapper">
             <div className="ibar-scroll">
               {data.map((itm, idx) => (

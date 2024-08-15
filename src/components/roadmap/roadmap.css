@@ -3,21 +3,25 @@
     height: 100px;
 }
 .roadmap-card{
+    z-index: 10;
+    background-color: #F9FEEA;
+    color: black;
     border: 0.73px solid white;
     padding: 10px;
     border-radius: 8.75px;
 }
 
 .roadmap-card .roadmap-img-wrapper {
+
     width: 140px;
     height: 140px;
-    background-color: #171718;
+
     border-radius: 100%;
     margin-right: 1.5rem;
 }
 
 .roadmap-card h2 {
-    font-weight: 800;
+    font-weight: 200;
     font-size: 34px;
 }
 

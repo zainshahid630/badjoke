@@ -7,7 +7,10 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
+
+
 }
 
 body {
@@ -96,3 +99,75 @@ input:is(:active, :focus) {
     }
   }
 }
+
+
+.road-card{
+  height: 350px;
+  margin-right: 10px;
+  width: 300px;
+  background-repeat: round;
+  background-image: url('/src/assets/road-map.png');
+
+  
+}
+.swipper-wrapper{
+  height: 300px;
+  display: flex;
+
+
+}
+
+.content
+{
+  top: 90px;
+  left: 45px;
+   width: 200px;
+
+
+}
+
+
+
+.numimage {
+
+  top: 10px;
+  left: 20px;
+  background-color: #e8fcae;
+  color: black;
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px; /* Aligns text vertically in the center */
+}
+
+
+.custom-accordion .accordion-header {
+  background-color: #FAFFEA; /* Replace with your desired color */
+}
+
+.custom-accordion .accordion-body {
+  background-color: #FAFFEA; /* Replace with your desired color */
+}
+
+.feature_tokenimage{
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  right: 25px;
+  bottom: 125px;  
+}
+
+
+
+
+.imgaemap{
+
+ background-image: url('/src/assets/road-map.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+

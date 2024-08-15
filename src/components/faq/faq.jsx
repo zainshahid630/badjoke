@@ -2,21 +2,29 @@ import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { faqs } from "../../utils/constants";
 import './faq.css'
+import { Col, Container, Row } from "react-bootstrap";
+import Frequentlyquestion from "../Faqs";
+import image from '../../assets/Faq.png'
 const FAQs = () => {
   return (
-    <div className="faqs-container">
-      <div className="faqs-wrapper">
-        <div>
-          <h2 className="faqs-header">FAQs</h2>
-          <p className="faqs-description">Your questions, answered.</p>
-        </div>
-        <div className="faqs-content">
-          {faqs.map((itm, idx) => (
-            <FAQ key={idx} q={itm.q} a={itm.a} />
-          ))}
-        </div>
-      </div>
-    </div>
+    <section  className="container-fluid text-center">
+    <Row>
+      <Container>
+        <Row>
+          <Col xl="12" lg="12">
+          <div  className='mt-5'  style={{color:'#E8FCAF', textAlign:'-webkit-center'  }}> 
+                  <img src={image} />
+            </div>
+          </Col>
+          <div className="mb-4" />
+          <Col xl="12" lg="12">
+            <Frequentlyquestion />
+          </Col>
+          <div className="mb-4" />
+        </Row>
+      </Container>
+    </Row>
+  </section>
   );
 };
 

@@ -1,10 +1,10 @@
 .ibar-container {
-    padding: 3rem 0;
+    padding: 1rem 0;
     background-color: rgba(251, 244, 223, 1) /* Replace with actual color value */
   }
   
   .ibar-wrapper {
-    max-width: 1280px;
+
     margin: 0 auto;
     padding: 0 1.5rem;
     width: 100%;
@@ -21,8 +21,8 @@
   .ibar-heading {
     flex: 1;
     text-align: center;
-    font-size: 0.875rem;
-    font-weight: bold;
+    font-size: 2.875rem;
+
     text-transform: uppercase;
     color: black;
     letter-spacing: 0.5px;
@@ -52,16 +52,14 @@
   /* Media Queries */
   @media (min-width: 768px) {
     .ibar-container {
-      padding: 4rem 0;
+      padding: 1rem 0;
     }
   
     .ibar-heading {
       width: auto;
     }
   
-    .ibar-scroll-wrapper {
-      width: calc(100% - 156px - 20px);
-    }
+
   
     .ibar-scroll {
       height: 62px;

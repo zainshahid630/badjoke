@@ -131,12 +131,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="copyright-area">
-        <div className="left-copyright-area">BADJOKE @ 2024. All rights reserved</div>
-        <div className="right-copyright-area">
-        Investing in cryptocurrencies involves significant risk and may result in substantial financial loss. Always conduct your own research before making any investment decisions
-        </div>
-      </div>
+
     </>
   );
 };

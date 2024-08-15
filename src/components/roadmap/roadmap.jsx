@@ -1,10 +1,17 @@
 import './roadmap.css'
+import feature from '../../assets/our-Feature.png'
+import logotoken from '../../assets/bg-token.png'
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 const RoadMap = () => {
     return (
         <div className='roapmap'>
-            <h3 className='text-center mt-3'>OUR FEATURES</h3>
+            <div  className='mt-5'  style={{color:'#E8FCAF', textAlign:'-webkit-center'  }}> 
+                  <img src={feature} />
+            </div>
             <div className="box">
                 
                 <div className="wrapper full">
@@ -19,9 +26,10 @@ const RoadMap = () => {
                             </div>
                         </div>
                         <div className="col-12 col-md-6">
-                            <div className='roadmap-card mb d-flex'>
+                            <div className='roadmap-card mb d-flex' style={{position:'relative'}}>
+                                <img className='feature_tokenimage' src={logotoken} />
                                 
-                                <div>
+                                <div > 
                                     <h2>Easy Wallet Integration</h2>
                                     <p>Seamlessly add Doge2014 in your EVM wallet such as MetaMask and start staking to celebrate Dogecoin's ten-year milestone</p>
                                 </div>

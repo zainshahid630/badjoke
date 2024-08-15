@@ -1,10 +1,12 @@
 import React from "react";
+import bgimage from '../../assets/hero-bg.png'
+
 
 import "./hero.css";
 
 const FundingHero = () => {
   return (
-    <div className="funding-hero">
+    <div className="funding-hero"  style={{ backgroundImage: `url(${bgimage})` , backgroundRepeat:'round' , backgroundColor:'#1E3229' }} >
       <div className="funding-hero-container">
         <div className="funding-hero-text">
           <h1 className="funding-hero-title">Introducing BadJoke</h1>
@@ -16,8 +18,8 @@ const FundingHero = () => {
             <button className="audit-btn">AUDIT</button>
           </div>
         </div>
-        <div className="funding-hero-image">
-          <div className="card-container">
+        <div className="funding-hero-image"  >
+          <div className="card-container" style={{backgroundColor:'#F9FEEA' , color:'black'}}>
             <div className="next-price-text">
               <h6>NEXT PRICE INCREASE IN</h6>
             </div>
@@ -25,7 +27,8 @@ const FundingHero = () => {
               <div className="time-duration">
                 <span>09</span>
                 <span>Days</span>
-              </div>
+              </div> 
+              
               <div className="time-duration">
                 <span>04</span>
                 <span>Hours</span>

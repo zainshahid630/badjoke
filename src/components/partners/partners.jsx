@@ -9,58 +9,49 @@ const Partners = () => {
         <div className="wrapper full">
           <h2 className="partners-head">ROADMAP</h2>
           <div className="swipper-wrapper">
-            <Swiper
-              modules={[Pagination, Autoplay]}
-              spaceBetween={20}
-              pagination={{ clickable: true }} // Make pagination dots clickable
-              slidesPerView={1}
-              breakpoints={{
-                769: {
-                  slidesPerView: 3, // 3 slides per view on larger screens
-                },
-              }}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-            >
-              <SwiperSlide>
-                <div className="card">
-                  <h5>Phase 1</h5>
-                  <p>
-                    Initiate the Doge2014 project with a token presale to
-                    celebrate Dogecoin and build a strong community foundation.
-                  </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="card">
-                  <h5>Phase 2</h5>
-                  <p>
-                    Expand community outreach and integrate new functionalities
-                    to enhance user engagement.
-                  </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="card">
-                  <h5>Phase 3</h5>
-                  <p>
-                    Launch strategic partnerships and develop innovative
-                    features to drive growth.
-                  </p>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="card">
-                  <h5>Phase 4</h5>
-                  <p>
-                    Achieve mainstream adoption and continuous community support
-                    for sustained success.
-                  </p>
-                </div>
-              </SwiperSlide>
-            </Swiper>
+          <div className="row">
+                        <div className=" col-md-6">
+                            <div className='roadmap-card mb d-flex'>
+                               
+                                <div>
+                                    <h2>Stake-to-Earn Rewards</h2>
+                                    <p>Stake your Doge2014 tokens to earn passive rewards while celebrating the legacy of Dogecoin's journey from 2014.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className='roadmap-card mb d-flex'>
+                              
+                                
+                                <div > 
+                                    <h2>Easy Wallet Integration</h2>
+                                    <p>Seamlessly add Doge2014 in your EVM wallet such as MetaMask and start staking to celebrate Dogecoin's ten-year milestone</p>
+                                </div>
+                            </div>
+                        </div>
+                                    <div className="col-md-6">
+                            <div className='roadmap-card mb d-flex'>
+                              
+                                
+                                <div > 
+                                    <h2>Easy Wallet Integration</h2>
+                                    <p>Seamlessly add Doge2014 in your EVM wallet such as MetaMask and start staking to celebrate Dogecoin's ten-year milestone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className='roadmap-card mb d-flex'>
+                              
+                                
+                                <div > 
+                                    <h2>Easy Wallet Integration</h2>
+                                    <p>Seamlessly add Doge2014 in your EVM wallet such as MetaMask and start staking to celebrate Dogecoin's ten-year milestone</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
           </div>
         </div>
       </div>
