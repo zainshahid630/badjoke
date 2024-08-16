@@ -1,6 +1,6 @@
 import './roadmap.css'
 import feature from '../../assets/our-Feature.png'
-import logotoken from '../../assets/bg-token.png'
+import logotoken from '../../assets/bg-notoken.png'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -25,8 +25,9 @@ const RoadMap = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6">
-                            <div className='roadmap-card mb d-flex' style={{position:'relative'}}>
+                        <div className="col-12 col-md-6" style={{position:'relative'}}>
+                            <div className='roadmap-card mb d-flex' >
+                                <img className='feature_tokenimage' src={logotoken}  />
                                 
                                 <div > 
                                     <h2>Easy Wallet Integration</h2>

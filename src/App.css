@@ -157,7 +157,7 @@ input:is(:active, :focus) {
 
 .feature_tokenimage{
   position: absolute;
-  width: 200px;
+
   z-index: 1;
   right: 25px;
   bottom: 125px;  
