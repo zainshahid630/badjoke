@@ -16,43 +16,43 @@ const RoadMap = () => {
                 
                 <div className="wrapper full">
                     <div className="row">
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 feature-card" >
                             <div className='roadmap-card mb d-flex'>
                                
                                 <div>
-                                    <h2>Stake-to-Earn Rewards</h2>
-                                    <p>Stake your Doge2014 tokens to earn passive rewards while celebrating the legacy of Dogecoin's journey from 2014.</p>
+                                    <h2>Token Giveaways</h2>
+                                    <p>Join our Telegram and get free tokens when you drop your BEP-20 wallet address.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6" style={{position:'relative'}}>
+                        <div className="col-12 col-md-6 feature-card" style={{position:'relative'}}>
                             <div className='roadmap-card mb d-flex' >
-                                <img className='feature_tokenimage' src={logotoken}  />
                                 
                                 <div > 
-                                    <h2>Easy Wallet Integration</h2>
-                                    <p>Seamlessly add Doge2014 in your EVM wallet such as MetaMask and start staking to celebrate Dogecoin's ten-year milestone</p>
-                                </div>
+                                <img className='feature_tokenimage' src={logotoken}  />
+                                
+                                    <h2>Bonus on Big Purchases</h2>
+                                    <p>Buy over $1001 worth of tokens and receive a unique referral code for extra rewards.</p>         </div>
                             </div>
                         </div>
                     </div>
                     <div className="roadmap-card-sep"></div>
                     <div className="row">
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 feature-card">
                             <div className='roadmap-card mb d-flex'>
                                 
                                 <div>
-                                    <h2>Secure and Transparent</h2>
-                                    <p>Enjoy secure and transparent staking on Ethereum's blockchain, celebrating ten years of Dogecoin's impact.</p>
+                                    <h2>Exclusive Promo Codes</h2>
+                                    <p>Unlock 15% extra tokens with our promo codes! Stack up bonuses for even greater rewards.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 feature-card">
                             <div className='roadmap-card d-flex'>
                                
                                 <div className=''>
-                                    <h2>Hold to Celebrate</h2>
-                                    <p>Celebrate ten years of Dogecoin by simply holding Doge2014 tokens and enjoy being part of the community.</p>
+                                    <h2>Limited Supply of 100 Billion</h2>
+                                    <p>Only 100 billion tokens available! Grab yours now before they run out and the price skyrockets.</p>
                                 </div>
                             </div>
                         </div>

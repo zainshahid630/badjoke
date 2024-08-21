@@ -6,24 +6,24 @@ import img4 from '../../assets/coinpedia.svg.png'
 import img5 from '../../assets/cryptonews.svg.png'
 import img6 from '../../assets/insidebitcoin.svg.png'
 
-import "./ibar.css";
+import "./badJoke.css";
 
 const data = [img1, img2, img3  , img4 , img5 , img6 , img1 , img2, img3  , img4 , img5 , img6 ];
 
-const Ibar = () => {
+const badJoke = () => {
   return (
-    <div className="ibar-container">
-          <h1 className="ibar-heading">
+    <div className="badJoke-container">
+          <h1 className="badJoke-heading">
            featured in
           </h1>
-      <div className="ibar-wrapper">
+      <div className="badJoke-wrapper">
 
-        <div className="ibar-content">
+        <div className="badJoke-content">
        
-          <div className="ibar-scroll-wrapper">
-            <div className="ibar-scroll">
+          <div className="badJoke-scroll-wrapper">
+            <div className="badJoke-scroll">
               {data.map((itm, idx) => (
-                <div key={idx} className="ibar-item">
+                <div key={idx} className="badJoke-item">
                   <img src={itm} alt="feature" />
                 </div>
               ))}
@@ -35,4 +35,4 @@ const Ibar = () => {
   );
 };
 
-export default Ibar;
+export default badJoke;

@@ -1,16 +1,16 @@
-.ibar-container {
+.badJoke-container {
     padding: 1rem 0;
     background-color: rgba(251, 244, 223, 1) /* Replace with actual color value */
   }
   
-  .ibar-wrapper {
+  .badJoke-wrapper {
 
     margin: 0 auto;
     padding: 0 1.5rem;
     width: 100%;
   }
   
-  .ibar-content {
+  .badJoke-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -18,7 +18,7 @@
     width: 100%;
   }
   
-  .ibar-heading {
+  .badJoke-heading {
     flex: 1;
     text-align: center;
     font-size: 2.875rem;
@@ -28,19 +28,19 @@
     letter-spacing: 0.5px;
   }
   
-  .ibar-scroll-wrapper {
+  .badJoke-scroll-wrapper {
     width: 100%;
     overflow: hidden;
   }
   
-  .ibar-scroll {
+  .badJoke-scroll {
     display: flex;
     overflow: hidden;
     height: 2.625rem;
     width: calc(134px * 12);
   }
   
-  .ibar-item {
+  .badJoke-item {
     min-width: 110px;
     margin: 0 0.75rem;
     display: flex;
@@ -51,23 +51,28 @@
   
   /* Media Queries */
   @media (min-width: 768px) {
-    .ibar-container {
+    .badJoke-container {
       padding: 1rem 0;
     }
   
-    .ibar-heading {
+    .badJoke-heading {
       width: auto;
     }
   
 
   
-    .ibar-scroll {
+    .badJoke-scroll {
       height: 62px;
       width: calc(194px * 12);
     }
   
-    .ibar-item {
+    .badJoke-item {
       min-width: 170px;
     }
   }
   
+
+  .feature-card{
+    height: 100px;
+    margin-top: 30px;
+  }

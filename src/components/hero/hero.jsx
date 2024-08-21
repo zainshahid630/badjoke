@@ -6,7 +6,9 @@ import "./hero.css";
 
 const FundingHero = () => {
   return (
-    <div className="funding-hero"  style={{ backgroundImage: `url(${bgimage})` , backgroundRepeat:'round' , backgroundColor:'#1E3229' }} >
+    <div className="funding-hero"  style={{ backgroundImage: `url(${bgimage})` 
+    
+    , backgroundRepeat:'round' , backgroundColor:'#1E3229' }} >
       <div className="funding-hero-container">
         <div className="funding-hero-text">
           <h1 className="funding-hero-title">Introducing BadJoke</h1>

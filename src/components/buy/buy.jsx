@@ -23,8 +23,7 @@ const Buy = () => {
               <div className="content-description">
                 <p>Connect wallet</p>
                 <span>
-                  To purchase Doge2014 Token you need to connect your wallet,
-                  which involves approving the contract on your wallet
+                To start, connect your preferred cryptocurrency wallet, such as MetaMask, or any other wallet compatible with our platform. This connection allows you to interact with the contract and securely manage your funds during the token purchase.
                 </span>
               </div>
             </div>
@@ -35,10 +34,9 @@ const Buy = () => {
               </div>
 
               <div className="content-description">
-                <p>Participate in Presale</p>
+                <p>Add Promo Code</p>
                 <span>
-                  Visit our presale platform and follow the instructions to
-                  purchase Doge2014 tokens using your preferred cryptocurrency.
+                If you have a promo code, make sure to enter it here. Applying a valid promo code can give you bonus tokens or other exclusive benefits during your purchase.
                 </span>
               </div>
             </div>
@@ -48,10 +46,22 @@ const Buy = () => {
                 <img src={number3} alt="" />
               </div>
               <div className="content-description">
-                <p>Claim Tokens</p>
+                <p>Add Referral Link</p>
                 <span>
-                  Once the presale is complete, you will be able to claim your
-                  Doge2014 tokens into your wallet address.
+                Have a referral link? Enter it in this section to unlock additional rewards for both you and the referrer. This is your chance to maximize your benefits through our referral program.
+                </span>
+              </div>
+            </div>
+
+
+            <div className="text-content-wrapper">
+              <div>
+                <img src={number3} alt="" />
+              </div>
+              <div className="content-description">
+                <p>Finalize Purchase</p>
+                <span>
+                Once everything is set—wallet connected, promo code and referral link (if applicable) added—simply click the 'Buy' button. This will initiate the transaction, allowing you to purchase the tokens and complete your participation in the sale.
                 </span>
               </div>
             </div>

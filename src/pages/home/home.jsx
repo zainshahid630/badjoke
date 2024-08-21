@@ -4,7 +4,7 @@ import FAQs from "../../components/faq/faq";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
-import Ibar from "../../components/ibar/ibar";
+import badJoke from "../../components/badJoke/badJoke";
 import Partners from "../../components/partners/partners";
 import Refill from "../../components/refill/refill";
 import RoadMap from "../../components/roadmap/roadmap";
@@ -16,15 +16,17 @@ import FundingToken from "../../components/Token/token";
 
 const Home = () => {
     return (
-        <div style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
             <Header />
+  
             <Hero />
 
-            <Ibar />
-            <RoadMap />
-            <div style={{ backgroundImage: `url(${buyimage})` , backgroundRepeat:'round'}} >
+            <badJoke />
+            <div style={{ backgroundImage: `url(${buyimage})` , backgroundRepeat:'round' }} >
             <Buy />
             </div>
+            <RoadMap />
+         
             <Partners />
 
             <FundingToken />

@@ -66,15 +66,15 @@ input:is(:active, :focus) {
     padding: 30px 0;
   }
 }
-.ibar-scroll {
+.badJoke-scroll {
   display: flex;
   overflow: hidden;
   height: 2.625rem; /* Equivalent to 42px */
   width: calc(134px * 12);
-  animation: ibar-scroll 18s linear infinite;
+  animation: badJoke-scroll 18s linear infinite;
 }
 
-@keyframes ibar-scroll {
+@keyframes badJoke-scroll {
   0% {
     transform: translateX(0px);
   }
@@ -84,13 +84,13 @@ input:is(:active, :focus) {
 }
 
 @media screen and (max-width: 768px) {
-  .ibar-scroll {
+  .badJoke-scroll {
     height: 42px; /* Adjust height for smaller screens */
     width: calc(134px * 12);
-    animation: ibar-scroll-mobile 18s linear infinite;
+    animation: badJoke-scroll-mobile 18s linear infinite;
   }
 
-  @keyframes ibar-scroll-mobile {
+  @keyframes badJoke-scroll-mobile {
     0% {
       transform: translateX(0px);
     }
@@ -105,7 +105,7 @@ input:is(:active, :focus) {
   position: relative;
   height: 350px;
   margin-right: 10px;
-  width: 300px;
+  width: 260px;
   background-repeat: round;
   background-image: url('/src/assets/road-map.png');
 
@@ -157,10 +157,13 @@ input:is(:active, :focus) {
 
 .feature_tokenimage{
   position: absolute;
-
+  width: 150px;
   z-index: 1;
   right: 25px;
-  bottom: 125px;  
+  bottom: 100px;  
+
+  
+   
 }
 
 
