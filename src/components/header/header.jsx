@@ -42,18 +42,22 @@ const Header = () => {
                         </div>
                     </div>
                     <div className={`header-right ${sidebarDisplay}`}>
+                        
                         <div className={`header-links ${sidebarWidth}`}>
                             <div className="hamburger hamburger_"
                                 onClick={() => sidebarHandle(2)}>
                                 <div></div>
                                 <div></div>
                             </div>
-                            <Link>Home</Link>
-                            <Link>Features</Link>
-                            <Link>Tokenomics</Link>
-                            <Link>Roadmap</Link>
-                        
+                            <Link style={{color:"black"}}>Home</Link>
+                            <Link style={{color:"black"}}>Features</Link>
+                            <Link style={{color:"black"}}>Tokenomics</Link>
+                            <Link style={{color:"black"}}>Roadmap</Link>
+                            <div>
+                            </div>
+                             
                         </div>
+                        
                         
                     </div>
                     <button className='header-btn'>BUY NOW</button>
