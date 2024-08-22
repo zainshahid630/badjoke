@@ -26,10 +26,14 @@
     font-weight: 500;
     font-style: italic;
     letter-spacing: 3px;
+   
+  }
+  .badjoke{
+    font-size: 50px;
   }
   
   .funding-hero-title {
-    color: white;
+    color: rgba(232, 252, 175, 1) !important;
     font-weight: bold;
     font-size: 2.25rem; /* equivalent to text-3xl */
     margin-top: 0.75rem;
