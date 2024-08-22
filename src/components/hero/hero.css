@@ -55,14 +55,15 @@
   .whitepaper-btn{
     padding: 16px 60px;
     border-radius: 8px;
-    background-color: #007aff;
-    border-color: #fff !important;
-    box-shadow: 0 6px #00000040
+    background-color: rgba(232, 252, 175, 1) !important;
+    border-color: black !important;
+    box-shadow: 0 6px #00000040;
+    color:black !important
   }
   .audit-btn{
     padding: 16px 60px;
     border-radius: 8px;
-    background-color: #f7cb46;
+    background-color: rgba(141, 202, 162, 1) !important;
     border-color: #333 !important;
     box-shadow: 0 6px #00000040;
     color: black;
@@ -138,19 +139,23 @@
     justify-content: center;
     margin-top: 10px;
   }
-  .eth-btn{
-
-    background-color: blue;
-    color: white;
-    border-radius: 4px;
   
-  }
-  .btc-btn{
-
-    color: white;
+  .btc-btn {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 10px 10px;
     border-radius: 4px;
-    border: 1px solid black;
+    color: black;
+    background-color: rgb(249, 254, 234);
+    box-sizing: border-box; 
   }
+  .address-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center; 
+    margin-top: 8px;
+  }
+  
   .wallet-btn{
     min-width: 110px;
     padding: 10px 30px;
@@ -201,32 +206,26 @@
       width: 40px;
    
     } 
-    .btc-btn,
+    /* .btc-btn,
     .eth-btn{
       padding: 10px 46px;
-    } 
+    }  */
     
   }
+
+  
   
 
 
-  .input-container {
-    position: relative;
-    width: 100%;
-  }
   
-  .input-container input {
-    padding: 3px; /* Adjust this value according to your icon size */
-  }
+  
+ 
   
   .input-icon {
+    width: 12%;
     position: absolute;
-    right: 10px; /* Adjust this value to position the icon */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; /* Adjust the size of the icon */
-    height: 20px;
-    pointer-events: none; /* Makes sure the icon doesn't block input clicks */
+    top: 18%;
+    right: 8px;
   }
   
 
@@ -303,6 +302,13 @@
       width: 100%;
     }
   }
+  .input-icon {
+  
+    top: 30%;
+    right: 8px;
+}
+
+
   
 
 
