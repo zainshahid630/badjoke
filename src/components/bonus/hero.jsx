@@ -1,6 +1,6 @@
 import React from "react";
 import bgimage from '../../assets/hero-bg.png'
-
+import bjImage from '../../assets/Logotoken.png';
 import "./bonus.css";
 
 const Fundingbonus = () => {
@@ -28,20 +28,22 @@ const Fundingbonus = () => {
               <p style={{ fontSize: '30px' }}>Bonus Calculator</p>
             </div>
             <p >
-              Input the amount of Doge2014 you’re purchasing to see your
+              Input the amount of USDT you’re purchasing to see your
               bonus
 
             </p>
             <div style={{display:'flex',justifyContent:'space-between' }}  className="mt-4">
             <p style={{}}> If I Buy </p>
-            <p style={{}}> ($ 0 )</p>
-            
+            <div  style={{display:'flex'}}>   
+                     
+            (
+            <img  style={{width:'20px' , marginBottom:'10px'}} src={bjImage} />  
+               <span > 100 </span>
+            ) Bonus BJ
               </div>
-
-              <input />
-
-            
-
+              </div>
+              <input  className="form-input"/>
+             
 
           </div>
         </div>

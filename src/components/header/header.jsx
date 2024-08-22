@@ -60,7 +60,7 @@ const Header = () => {
                         
                         
                     </div>
-                    <button className='header-btn'>BUY NOW</button>
+                    <button className='header-btn'>Connect Wallet</button>
                 </div>
             </div>
         </div>
