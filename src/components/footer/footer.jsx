@@ -1,138 +1,45 @@
 import "./footer.css";
 import React from "react";
-import { FaDiscord, FaGithub, FaTelegram, FaTwitter } from "react-icons/fa6";
-import badjoke from '../../assets/Badjoke.png'
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import badjoke from '../../assets/Paxium.png';
+
+import twitter from '../../assets/twitter.png';
+import discord from '../../assets/dics.png';
+import telegram from '../../assets/teleg.png';
+import instagram from '../../assets/insta.png';
 
 const Footer = () => {
   return (
-    <>
-      <footer>
-        <a
+    <div className="footer-container">
+      {/* Logo Section */}
+      <div className="footer-logo">
+        <img src={badjoke} alt="Paxium Logo" />
+      </div>
+
+      {/* Links Section */}
+      <div className="footer-links">
+        <Link to="/about" className="footer-link">About</Link>
+        <Link to="/projects" className="footer-link">Key Projects</Link>
+        <Link to="/whitepaper" className="footer-link">WhitePaper</Link>
+        <Link to="/tokenomics" className="footer-link">Tokenomics</Link>
+        <Link to="/faqs" className="footer-link">FAQs</Link>
+        <Link to="/faqs" className="footer-link"> Terms & Conditions</Link>
+        <Link to="/faqs" className="footer-link"> Privacy Policy</Link>
         
-          className="footer-box first-box"
-          style={{ display: "flex", justifyContent: "center" }}
-        >
-          <img
-            src={badjoke}
-            alt="Logo"
-           
-            style={{ marginTop: "40px"  , height: "50px" }}
-          />
-        </a>
 
-        <div className="footer-box second-box">
-          <a
-            className="footer-links"
-          >
-            Home
-          </a>
-          <a
 
-            className="footer-links"
-          >
-            Docs
-          </a>
-          
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="footer-links"
-          >
-            Whitepaper
-          </a>
-        </div>
-        <div className="footer-box second-box">
-          <a
-            className="footer-links"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Features
-          </a>
-          <a
-            className="footer-links"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Tokenomics
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className="footer-links"
-          >
-            Roadmap
-          </a>
-        </div>
-        <div className="footer-box second-box">
-          <a
-            className="footer-links"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Cookie policy
-          </a>
-          <a
-            className="footer-links"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Privacy Policy
-          </a>
-         
-          <a
-            className="footer-links"
-          >
-            Contact
-          </a>
-        </div>
+       
+      </div>
 
-        <div
-          className="footer-box last-box"
-          style={{ paddingTop: "55px" }}
-        >
-          <div className="footer-box-images">
-            <a
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaTwitter
-                size={23}
-                fill="#fff"
-              />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaTelegram
-                size={23}
-                fill="#fff"
-              />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaDiscord
-                size={23}
-                fill="#fff"
-              />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub
-                size={23}
-                fill="#fff"
-              />
-            </a>
-          </div>
-        </div>
-      </footer>
-
-    </>
+      {/* Social Media Section */}
+      <p className="footer-follow">Follow Us</p>
+      <div className="footer-social-icons">
+        <img src={twitter} alt="Twitter" className="footer-icon" />
+        <img src={discord} alt="Discord" className="footer-icon" />
+        <img src={telegram} alt="Telegram" className="footer-icon" />
+        <img src={instagram} alt="Instagram" className="footer-icon" />
+      </div>
+    </div>
   );
 };
 

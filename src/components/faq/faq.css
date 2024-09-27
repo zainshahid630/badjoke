@@ -84,3 +84,188 @@
     --accent-secondary: #3490dc; /* Example color, adjust according to your design */
   }
   
+
+
+
+  .FAQs-container {
+    background-color: rgb(37, 37, 37);
+    padding: 50px 0;
+    color: #e8fcaf;
+  }
+  
+  .FAQs-title {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .FAQs-heading {
+    font-size: 3rem; /* Base size for large screens */
+    color: #e8fcaf;
+  }
+  
+  .FAQs-highlight {
+    color: #00ffff;
+  }
+  
+  /* Spacer class for consistent spacing */
+  .FAQs-spacer {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive font sizes for different screen sizes */
+  @media (max-width: 1200px) {
+    .FAQs-heading {
+      font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .FAQs-heading {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .FAQs-heading {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .FAQs-heading {
+      font-size: 1.5rem; /* Smallest font size for mobile devices */
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+  /* Accordion styles */
+.FAQs-accordion .accordion-item {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.FAQs-accordion .accordion-header {
+  background-color: black;
+  color: white;
+}
+
+.FAQs-accordion .accordion-body {
+  background-color: black;
+  color: white;
+}
+
+.FAQs-accordion .accordion-button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.FAQs-accordion .accordion-button:not(.collapsed) {
+  background-color: black;
+  color: white;
+  box-shadow: none;
+}
+
+.FAQs-accordion .accordion-button:hover {
+  background-color: #333;
+}
+
+.FAQs-accordion .FAQs-copy-text {
+  cursor: pointer;
+  color: cyan;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.FAQs-accordion .FAQs-copy-text:hover {
+  color: lightcyan;
+}
+
+.FAQs-accordion-item {
+  border: 1px solid #444; /* Optional border for styling */
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container */
+.footer-container {
+  padding: 20px;
+  background-color: #018d91;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+/* Logo Section */
+.footer-logo img {
+  width: 120px;
+  margin: 20px auto;
+}
+
+/* Links Section */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: white;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #00FFFF;
+}
+
+/* Follow Us Text */
+.footer-follow {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Social Icons Section */
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}

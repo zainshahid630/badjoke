@@ -66,3 +66,325 @@
         margin-bottom: 1rem;
     }
 }
+
+
+
+/* Roadmap Container */
+.roadmap-container {
+    padding: 20px;
+}
+
+.roadmap-padding {
+    padding: 20px;
+}
+
+.roadmap-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.roadmap-highlight {
+    color: #00FFFF;
+}
+
+/* Referral Box */
+.roadmap-referral-box {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.roadmap-subheading {
+    font-size: 24px;
+}
+
+.roadmap-link-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.roadmap-link-box {
+    background-color: black;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+    overflow: scroll;
+  
+    /* 3D Effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), /* soft shadow */
+                0 2px 4px rgba(0, 0, 0, 0.15); /* light shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+    /* Subtle gradient to add depth */
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  }
+  
+  /* Hover state */
+  .roadmap-link-box:hover {
+    transform: translateY(-5px); /* Lift the box up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), /* deeper shadow */
+                0 4px 8px rgba(0, 0, 0, 0.2); /* softer shadow */
+  }
+  
+  /* Active/Pressed state */
+  .roadmap-link-box:active {
+    transform: translateY(2px); /* Slightly press the box down */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), /* pressed shadow */
+                0 1px 2px rgba(0, 0, 0, 0.1);  /* depth shadow */
+  }
+  
+
+  .roadmap-copy-box {
+    background-color: white; /* Base color */
+    border-radius: 10px; /* Rounded corners */
+    color: black; /* Text color */
+    padding: 10px; /* Padding around content */
+    text-align: center; /* Centered text */
+    width: 15%; /* Width of the box */
+    cursor: pointer; /* Pointer on hover */
+  
+    /* 3D Effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* soft shadow */
+                0 2px 4px rgba(0, 0, 0, 0.15); /* light shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+    /* Subtle gradient for depth */
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  }
+  
+  /* Hover state */
+  .roadmap-copy-box:hover {
+    transform: translateY(-5px); /* Lift the box up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), /* deeper shadow */
+                0 4px 8px rgba(0, 0, 0, 0.2); /* softer shadow */
+  }
+  
+  /* Active/Pressed state */
+  .roadmap-copy-box:active {
+    transform: translateY(2px); /* Slightly press the box down */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), /* pressed shadow */
+                0 1px 2px rgba(0, 0, 0, 0.1);  /* depth shadow */
+  }
+  
+
+/* Stats Section */
+.roadmap-stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.roadmap-stats-card {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 48%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    /* 3D Effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), /* deep shadow */
+                0 4px 8px rgba(0, 0, 0, 0.15); /* soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+    /* Subtle gradient to add depth */
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  }
+  
+  /* Hover state */
+  .roadmap-stats-card:hover {
+    transform: translateY(-5px); /* Lift the card up */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), /* deeper shadow */
+                0 8px 16px rgba(0, 0, 0, 0.2); /* softer shadow */
+  }
+  
+  /* Active/Pressed state */
+  .roadmap-stats-card:active {
+    transform: translateY(2px); /* Slightly press the card down */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), /* pressed shadow */
+                0 3px 5px rgba(0, 0, 0, 0.1);  /* depth shadow */
+  }
+  
+
+.roadmap-stats-text {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.roadmap-stats-number {
+    font-size: 60px;
+    color: #00FFFF;
+}
+
+.roadmap-stats-amount {
+    font-size: 40px;
+    color: #00FFFF;
+}
+
+/* Latest Invited Box */
+.roadmap-latest-invited-box {
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+  
+    /* 3D Effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), /* deep shadow */
+                0 4px 8px rgba(0, 0, 0, 0.15); /* soft shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  
+    /* Subtle gradient to add depth */
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  }
+  
+  /* Hover state */
+  .roadmap-latest-invited-box:hover {
+    transform: translateY(-5px); /* Lift the box up */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), /* deeper shadow */
+                0 8px 16px rgba(0, 0, 0, 0.2); /* softer shadow */
+  }
+  
+  /* Active/Pressed state */
+  .roadmap-latest-invited-box:active {
+    transform: translateY(2px); /* Slightly press the box down */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), /* pressed shadow */
+                0 3px 5px rgba(0, 0, 0, 0.1);  /* depth shadow */
+  }
+  
+
+.roadmap-latest-invited-text {
+    color: white;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .roadmap-heading {
+        font-size: 28px;
+    }
+
+    .roadmap-referral-box {
+        padding: 30px;
+    }
+
+    .roadmap-stats-container {
+        flex-direction: column;
+    }
+
+    .roadmap-stats-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .roadmap-latest-invited-box {
+        width: 100%;
+    }
+
+    .roadmap-link-box {
+        width: 70%;
+    }
+
+    .roadmap-copy-box {
+        width: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-heading {
+        font-size: 24px;
+    }
+
+    .roadmap-link-box {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .roadmap-copy-box {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .roadmap-stats-number {
+        font-size: 40px;
+    }
+
+    .roadmap-stats-amount {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Global 3D Text Effect */
+@media (min-width: 768px) {
+h1, h2, h3, h4, h5, h6, p {
+    position: relative; /* Set position for the shadow effect */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center align text */
+    font-family: 'Arial', sans-serif; /* Use your preferred font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), /* Dark shadow */
+                 -1px -1px 2px rgba(255, 255, 255, 0.2); /* Light shadow */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect */
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, p:hover {
+    transform: translateY(-2px); /* Slightly lift on hover */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7), /* Deeper dark shadow */
+                 -2px -2px 4px rgba(255, 255, 255, 0.3); /* Lighter shadow */
+  }
+  
+}
+
+
+  /* 3D Effect for Links */
+a {
+    color: #00FFFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    position: relative; /* Set position for the shadow effect */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Allow transform to take effect */
+  }
+  
+  /* Hover effect for Links */
+  a:hover {
+    transform: translateY(-3px); /* Slightly lift on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), /* Dark shadow */
+                 -1px -1px 2px rgba(255, 255, 255, 0.2); /* Light shadow */
+  }
+  
+  /* 3D Effect for Images */
+  img {
+    display: block; /* Block level to avoid inline spacing issues */
+   
+    border-radius: 10px; /* Rounded corners for a softer look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect for Images */
+  img:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), /* Dark shadow */
+                0 0 10px rgba(255, 255, 255, 0.3); /* Light shadow */
+    background-color: transparent;            
+  }
+  

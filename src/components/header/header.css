@@ -1,7 +1,13 @@
 .header {
-    padding: 1.55rem 0;
-    background-color: rgb(249, 254, 234);
+    background-color: #008C91;
+    box-shadow: -1px -2px 6px 0px rgba(0, 0, 0, 0.25) inset, 1px 2px 8px 0px #00AAB0 inset;
+    filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.38));
+    width: 97%;
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 10px;
 }
+
 
 .header-cont {
     display: flex;
@@ -15,7 +21,7 @@
 }
 
 .header-cont .header-links a {
-    font-weight: 700;
+
     font-size: 20px;
 }
 
@@ -55,15 +61,28 @@
 .header .hamburger_ div:last-child {
     transform: rotate(135deg) translate(-1px, 2px);
 }
-.header-btn
-{
-    background-color: 
-    rgba(0, 122, 255, 1);
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5.83px;
-    cursor: pointer;
+.header-btn {
+    cursor:pointer;
+    border-radius: 13.013px; /* Rounded corners */
+    background: #FFF; /* Background color */
+    color: black; /* Text color */
+    padding: 8px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor on hover */
+    box-shadow: 
+        -1px -2px 4px 0px rgba(0, 0, 0, 0.25) inset, /* Inner shadow */
+        0px 4px 10px 0px rgba(0, 0, 0, 0.25); /* Outer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
+
+/* Hover effect for the button */
+.header-btn:hover {
+    transform: translateY(-3px); /* Slightly lift on hover */
+    box-shadow: 
+        -1px -2px 4px 0px rgba(0, 0, 0, 0.3) inset, /* Darker inner shadow */
+        0px 6px 15px 0px rgba(0, 0, 0, 0.3); /* Enhanced outer shadow */
+}
+
 @media screen and (max-width:767px) {
     .header .hamburger {
         display: block;
@@ -78,6 +97,7 @@
     }
 
     .header-right {
+        height: 250px !important;
         display: none;
         position: fixed;
         top: 0;
@@ -89,23 +109,30 @@
     }
 
     .header-cont .header-links {
-        width: 0;
+        width: 97% !important;
         height: 100%;
+        margin-top: 81px;
         padding: 1.6rem 0;
-        background-color: white;
+        background-color: #094647;
         transition: padding .4s ease, width .4s ease;
         overflow-x: hidden;
     }
 
-    .header-cont .header-links a {
-        margin-left: 0 !important;
-        font-size: 16px;
-        display: block;
-        border-bottom: 1px solid #1e1e1e;
-        padding: 10px 1.6rem;
-        white-space: nowrap;
-        color: black !important;
-    }
+
+        .header-cont .header-links a {
+            margin-left: 0 !important;
+            font-size: 16px;
+            text-align-last: center;
+            display: block;
+            border-bottom: 1px solid #1e1e1e;
+            padding: 10px 1.6rem;
+            white-space: nowrap;
+            /* color: black !important; */
+            color: white;
+            padding: 10px;
+            background-color: #094647;
+        }
+    
 
     .sidebar_width {
         width: 200px !important;
@@ -119,3 +146,211 @@
     }
 
 }
+
+
+
+@media (min-width: 768px) and (max-width: 1047px){
+    .header-cont .header-links a:not(:first-child) {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+    }
+    .header-cont .header-links a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .header-logo{
+        img{
+            max-width: 50%;
+            height: auto;
+        
+        }
+    }
+    .header-btn {
+        border-radius: 13.013px;
+        background: #FFF;
+        color: black;
+        margin-left: 14px;
+        font-size: 12px;
+        padding: 5px;
+        box-shadow: -1px -2px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+
+.whatis{
+    color: #FFF;
+font-family: "Open Sans", sans-serif;
+font-size: 59.008px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.824px;
+
+}
+
+.Paxium{
+color: #0FF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: "Open Sans", sans-serif;
+font-size: 87.678px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 1.224px;
+}
+.Peace{
+    color: #FFF;
+text-align: center;
+font-family: "Open Sans", sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.673px;
+
+}
+
+
+
+.lorum{
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.673px;
+    
+}
+.box1{
+    border-radius: 50px;
+background: rgba(0, 0, 0, 0.30);
+box-shadow: 1px 3px 14px 0px rgba(0, 0, 0, 0.30) inset;
+backdrop-filter: blur(9px);
+width: 45%;
+
+flex-shrink: 0;
+
+}
+
+.box2{
+    border-radius: 50px;
+    width: 45%;
+
+    flex-shrink: 0;
+background: rgba(0, 0, 0, 0.30);
+box-shadow: 1px 3px 14px 0px rgba(0, 0, 0, 0.30) inset;
+backdrop-filter: blur(9px);
+
+}
+.claimbtn{
+    border-radius: 15px;
+    background: #FFF;
+    margin-top: 15px;
+    color: black;
+    padding: 10px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25), -1px -2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    width: 100%;
+}
+.input-type{
+    border-radius: 14px;
+background: rgba(0, 0, 0, 0.30);
+backdrop-filter: blur(5.5px);
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.images-link{
+    display: flex;
+    justify-content: center;
+    img{
+        margin-left: 40px;
+    }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 700px){
+    .Paxium{
+            font-size: 60px;
+    }
+    .whatis{
+        font-size: 36px;
+    }
+
+.box1{
+width: 100%;
+}
+.box2{
+    width: 100%;
+}
+.maindivs{
+    display: initial !important; 
+}
+}
+
+.maindivs{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* 36 60 */
+
+
+
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .pagination button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px; /* Size for the dots */
+    cursor: pointer;
+    outline: none;
+
+  }
+  
+  .pagination button.active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover:not(.active):not(:disabled) {
+    text-decoration: none;
+   
+  }
+
+  .roapmap{
+    
+    background-color: #262626 !important;
+  }
+  
+
+
+
+  .custom-accordion {
+    margin-left: 45px;
+    background-color: black;
+    color: white;
+  }
+  
+
+
+
+.hamburger{
+    margin-top: 12px;
+}  

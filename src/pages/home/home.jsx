@@ -14,12 +14,24 @@ import Fundingbonus from "../../components/bonus/hero";
 import FundingToken from "../../components/Token/token";
 
 
+import bgimage11 from "../../assets/ggif.gif";
+
 const Home = () => {
     return (
         <div style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', }}>
-            <Header />
+           
+           <div    style={{
+        backgroundImage: `url(${bgimage11})`,
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#1E3229",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+
+      }}>            <Header />
   
             <Hero />
+            </div>
+ 
 
             <badJoke />
             <div style={{ backgroundImage: `url(${buyimage})` , backgroundRepeat:'round' }} >
@@ -30,12 +42,12 @@ const Home = () => {
             <Partners />
 
             <FundingToken />
-
+{/* 
             <div style={{ backgroundImage: `url(${buyimage})` , backgroundRepeat:'round'}} >
 
              <Fundingbonus />
 
-             </div>
+             </div> */}
 
             <FAQs />
             <Footer />

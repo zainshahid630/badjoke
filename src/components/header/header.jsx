@@ -1,7 +1,7 @@
 import './header.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import badjoke from '../../assets/Badjoke.png'
+import badjoke from '../../assets/Paxium.png'
 
 const Header = () => {
     const [sidebarDisplay, setSidebarDisplay] = useState('')
@@ -27,6 +27,7 @@ const Header = () => {
     }
 
     return (
+        <div style={{display:'flex',justifyContent:'center'}}>
         <div className='header'>
             <div className="wrapper full">
                 <div className="header-cont">
@@ -49,10 +50,11 @@ const Header = () => {
                                 <div></div>
                                 <div></div>
                             </div>
-                            <Link style={{color:"black"}}>Home</Link>
-                            <Link style={{color:"black"}}>Features</Link>
-                            <Link style={{color:"black"}}>Tokenomics</Link>
-                            <Link style={{color:"black"}}>Roadmap</Link>
+                            <Link style={{color:"white"}}>About</Link>
+                            <Link style={{color:"white"}}>Key Projects</Link>
+                            <Link style={{color:"white"}}>WhitePaper</Link>
+                            <Link style={{color:"white"}}>Tokenomics</Link>
+                            <Link style={{color:"white"}}>FAQs</Link>
                             <div>
                             </div>
                              
@@ -63,6 +65,7 @@ const Header = () => {
                     <button className='header-btn'>Connect Wallet</button>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,4 +1,6 @@
 .buy-container {
+    background: linear-gradient(90deg, #04585D 0%, #008C91 100%), #00343A;
+
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -98,3 +100,123 @@
 
 
 
+.buy-container {
+    padding: 20px;
+  }
+  
+  .buy-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buy-war-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .buy-war-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .buy-war-text {
+    max-width: 800px;
+    padding: 10px;
+  }
+  
+  .buy-war-title {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .buy-war-date {
+    color: red;
+    font-size: 1.5rem;
+  }
+  
+  .buy-war-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  .buy-pagination-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .buy-pagination-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .buy-pagination-dot {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .buy-pagination-dot.active {
+    color: black;
+  }
+  
+  /* Tablet and small desktop view */
+  @media (min-width: 768px) {
+    .buy-war-info {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      justify-content: space-between;
+    }
+  
+    .buy-war-image {
+      width: 50%;
+      margin-right: 20px;
+    }
+  
+    .buy-war-text {
+      max-width: 600px;
+    }
+  
+    .buy-war-title {
+      font-size: 2.5rem;
+    }
+  
+    .buy-war-description {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Larger desktop view */
+  @media (min-width: 1024px) {
+    .buy-war-info {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .buy-war-image {
+      width: 45%;
+    }
+  
+    .buy-war-title {
+      font-size: 3rem;
+    }
+  
+    .buy-war-description {
+      font-size: 1.3rem;
+      line-height: 1.75;
+    }
+  }
+  

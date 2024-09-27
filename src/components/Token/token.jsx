@@ -1,5 +1,5 @@
 import React from "react";
-import bgimage from '../../assets/token1.png'
+import token from '../../assets/tokeno.png'
 import bgimage1 from '../../assets/tokenlist.png'
 
 
@@ -7,17 +7,11 @@ import "./token.css";
 
 const FundingToken = () => {
   return (
-    <div className="funding-hero">
-      <h2 class="title">Tokenomics </h2>
-      <div className="funding-hero-container">
-        
-        <div className="funding-hero-text">
-               <img src={bgimage} />
-        </div>
-        <div className="funding-hero-image " style={{marginBottom:'150px'}}  >
-        <img src={bgimage1} />
-        </div>
-      </div>
+    <div className="funding-hero"  style={{background:'rgb(37 37 37)'}}>
+      <h2 class="title">Pexium  <span style={{color:"#00FFFF"}}> Tokenomics </span> </h2>
+      <img src={token} />
+
+ 
     </div>
   );
 };

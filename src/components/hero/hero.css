@@ -378,3 +378,215 @@
     color: #ccc;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+  .FundingHero-container {
+    padding: 20px;
+    background-position: center;
+  }
+  
+  .FundingHero-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .FundingHero-whatis {
+    font-size: 36px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .FundingHero-highlight {
+    color: #00FFFF;
+  }
+  
+  .FundingHero-peace {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .FundingHero-lorum-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .FundingHero-lorum {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  .FundingHero-main-divs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .FundingHero-box1, .FundingHero-box2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .FundingHero-box-padding {
+    padding: 20px;
+  }
+  
+  .FundingHero-box-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .FundingHero-box-title {
+    font-size: 24px;
+  }
+  
+  .FundingHero-box-number {
+    font-size: 24px;
+  }
+  
+  .FundingHero-box-description {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .FundingHero-claim-btn {
+    background: linear-gradient(145deg, #00e5e5, #00bfbf); /* Gradient for a shiny look */
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    
+    /* 3D Effect */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15), /* soft shadow */
+                0 4px 6px rgba(0, 0, 0, 0.1);  /* depth shadow */
+  
+    /* Text shadow for additional pop */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    
+    /* Transition for a smooth hover effect */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Hover state */
+  .FundingHero-claim-btn:hover {
+    transform: translateY(-3px); /* Lifts button slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), /* deeper shadow */
+                0 6px 8px rgba(0, 0, 0, 0.15); /* depth shadow */
+  }
+  
+  /* Active/Pressed state */
+  .FundingHero-claim-btn:active {
+    transform: translateY(1px); /* Slight press down effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), /* pressed shadow */
+                0 3px 5px rgba(0, 0, 0, 0.1);  /* depth shadow */
+  }
+  
+  
+  .FundingHero-input-title {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .FundingHero-input-type {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #0000004D;
+  }
+  
+  .FundingHero-images-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .FundingHero-images-link img {
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .FundingHero-whatis {
+      font-size: 28px;
+    }
+  
+    .FundingHero-peace {
+      font-size: 20px;
+    }
+  
+    .FundingHero-box1, .FundingHero-box2 {
+      width: 100%;
+    }
+  
+    .FundingHero-box-header p {
+      font-size: 20px;
+    }
+  
+    .FundingHero-box-description {
+      font-size: 14px;
+    }
+  
+    .FundingHero-input-title {
+      font-size: 16px;
+    }
+  
+    .FundingHero-input-type {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .FundingHero-whatis {
+      font-size: 24px;
+    }
+  
+    .FundingHero-peace {
+      font-size: 18px;
+    }
+  
+    .FundingHero-box-title, .FundingHero-box-number {
+      font-size: 18px;
+    }
+  
+    .FundingHero-box-description {
+      font-size: 12px;
+    }
+  
+    .FundingHero-input-title {
+      font-size: 14px;
+    }
+  
+    .FundingHero-input-type {
+      font-size: 12px;
+    }
+  
+    .FundingHero-claim-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .FundingHero-images-link img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

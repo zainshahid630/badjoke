@@ -52,3 +52,96 @@
     align-items: center;
     text-align: left;
   }
+
+
+
+
+  /* Main container for the partners section */
+.partners-container {
+    padding: 20px;
+    background-color: #018d91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+  }
+  
+  .partners-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .partners-logo {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .partners-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .highlight {
+    color: #00FFFF; /* Cyan highlight for Paxium */
+  }
+  
+  .partners-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For tablets and larger phones */
+  @media (min-width: 768px) {
+    .partners-content {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  
+    .partners-logo {
+      width: 40%;
+      margin-bottom: 0;
+    }
+  
+    .partners-text {
+      width: 55%;
+    }
+  
+    .partners-title {
+      font-size: 2.5rem;
+    }
+  
+    .partners-description {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* For larger desktops */
+  @media (min-width: 1024px) {
+    .partners-logo {
+      width: 30%;
+    }
+  
+    .partners-title {
+      font-size: 3rem;
+    }
+  
+    .partners-description {
+      font-size: 1.4rem;
+    }
+  }
+  

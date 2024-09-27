@@ -1,80 +1,73 @@
 import React from "react";
 import "./buy.css";
-import badjokeimg from "../../assets/buyImg.png";
-import number1 from "../../assets/01.svg";
-import number2 from "../../assets/02.svg";
-import number3 from "../../assets/03.svg";
-import tick from '../../assets/tick.svg'
+import war1 from '../../assets/sliders/war1.png';
+import lefticon from '../../assets/left-cont.png';
+import righticon from '../../assets/right-icon.png';
 
 const Buy = () => {
+
+  const totalPages = 10;
+  const currentPage = 5;
+  const onPageChange = () => {};
+
+  const maxDots = 10;
+
+  const getPaginationRange = () => {
+    const halfMaxDots = Math.floor(maxDots / 2);
+    let startPage = Math.max(currentPage - halfMaxDots, 1);
+    let endPage = Math.min(startPage + maxDots - 1, totalPages);
+
+    if (endPage - startPage < maxDots - 1) {
+      startPage = Math.max(endPage - maxDots + 1, 1);
+    }
+
+    return Array.from({ length: endPage - startPage + 1 }, (_, idx) => startPage + idx);
+  };
+
   return (
-    <div class="buy-container">
-      <div class="buy-content">
-        <h2 class="title">HOW TO BUY</h2>
-        <div className="content-container">
-          <div class="image-container">
-            <img src={badjokeimg} alt="Badjoke" />
+    <div className="buy-container">
+      <div className="buy-content">
+        <div className="buy-war-info">
+          <img src={war1} className="buy-war-image" alt="World War I" />
+          <div className="buy-war-text">
+            <h2 className="buy-war-title">
+              World War I <span className="buy-war-date">(1914–1918)</span>
+            </h2>
+            <p className="buy-war-description">
+              World War I claimed 16–20 million lives, including 10 million military and 7 million civilians.
+              The war cost an estimated $186 billion in direct costs. The aftermath saw the collapse of major empires 
+              and the redrawing of borders, creating lasting ethnic tensions. The Treaty of Versailles destabilized Germany, 
+              leading to future conflicts. The war’s destruction of European infrastructure and economies had long-term global impacts.
+            </p>
           </div>
-          <div class="text-content">
-            <div className="text-content-wrapper">
-              <div>
-                <img src={number1} alt="" />
-              </div>
-              <div className="content-description">
-                <p>Connect wallet</p>
-                <span>
-                To start, connect your preferred cryptocurrency wallet, such as MetaMask, or any other wallet compatible with our platform. This connection allows you to interact with the contract and securely manage your funds during the token purchase.
-                </span>
-              </div>
-            </div>
+        </div>
 
-            <div className="text-content-wrapper">
-              <div>
-                <img src={number2} alt="" />
-              </div>
+        <div className="buy-pagination-container">
+          <button
+            disabled={currentPage === 1}
+            onClick={() => onPageChange(currentPage - 1)}
+            className="buy-pagination-btn"
+          >
+            <img src={lefticon} alt="Previous" />
+          </button>
 
-              <div className="content-description">
-                <p>Add Promo Code</p>
-                <span>
-                If you have a promo code, make sure to enter it here. Applying a valid promo code can give you bonus tokens or other exclusive benefits during your purchase.
-                </span>
-              </div>
-            </div>
+          {getPaginationRange().map((page) => (
+            <button
+              key={page}
+              className={`buy-pagination-dot ${page === currentPage ? "active" : ""}`}
+              onClick={() => onPageChange(page)}
+            >
+              •
+            </button>
+          ))}
 
-            <div className="text-content-wrapper">
-              <div>
-                <img src={number3} alt="" />
-              </div>
-              <div className="content-description">
-                <p>Add Referral Link</p>
-                <span>
-                Have a referral link? Enter it in this section to unlock additional rewards for both you and the referrer. This is your chance to maximize your benefits through our referral program.
-                </span>
-              </div>
-            </div>
-
-
-            <div className="text-content-wrapper">
-              <div>
-                <img src={number3} alt="" />
-              </div>
-              <div className="content-description">
-                <p>Finalize Purchase</p>
-                <span>
-                Once everything is set—wallet connected, promo code and referral link (if applicable) added—simply click the 'Buy' button. This will initiate the transaction, allowing you to purchase the tokens and complete your participation in the sale.
-                </span>
-              </div>
-            </div>
-
-            <div className="text-content-wrapper">
-            <div>
-                <img src={tick} alt="" />
-              </div>
-              <div className="content-description">
-                <button className="header-btn-buy">BUY NOW</button>
-              </div>
-            </div>
-          </div>
+          <button
+            disabled={currentPage === totalPages}
+            onClick={() => onPageChange(currentPage + 1)}
+            className="buy-pagination-btn"
+          >
+            <img src={righticon} alt="Next" />
+          </button>
         </div>
       </div>
     </div>

@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import bgimage from "../../assets/hero-bg.png";
-import usdtImage from "../../assets/usdt.png"; // Replace with the correct path
-import bjImage from "../../assets/Logotoken.png"; // Replace with the correct path
+import bgimage from "../../assets/ggif.gif";
+import usdtImage from "../../assets/usdt.png";
+import bjImage from "../../assets/Logotoken.png";
 import "./hero.css";
 import { FaClipboard } from "react-icons/fa6";
+import twitter from '../../assets/twitter.png';
+import discord from '../../assets/dics.png';
+import telegram from '../../assets/teleg.png';
+import instagram from '../../assets/insta.png';
 
 const FundingHero = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -14,10 +18,9 @@ const FundingHero = () => {
   });
   const [usdtAmount, setUsdtAmount] = useState("");
   const [bjAmount, setBjAmount] = useState("");
-  const bjRate = 0.000294; // 1 BJ = $0.000294
+  const bjRate = 0.000294;
   const remainingBJ = 5000;
   const TotalBJ = 100000;
-
   const percentage = (remainingBJ / TotalBJ) * 100;
   const formattedPercentage = percentage.toFixed(2);
 
@@ -65,146 +68,61 @@ const FundingHero = () => {
 
   return (
     <div
-      className="funding-hero"
-      style={{
-        backgroundImage: `url(${bgimage})`,
-        backgroundRepeat: "round",
-        backgroundColor: "#1E3229",
-      }}
+      className="FundingHero-container"
+   
     >
-      <div className="funding-hero-container">
-        <div className="funding-hero-text">
-          <h1 className="funding-hero-title">Introducing BadJoke</h1>
-          <p className="funding-hero-subtitle">
-            The only cryptocurrency you will HODL till the next bear run
-          </p>
-          <div className="hero-btn-wrapper">
-            <button className="whitepaper-btn">WHITEPAPER</button>
-            <button className="audit-btn">AUDIT</button>
-          </div>
-          <div className="AddressContainor">
-            <p>
-              Token Address:
-              <span className="token-address">
-                <span className="address">
-                  0x87c70E86D8eB816B5685cAb4515B168Aa9d2297c
-                </span>
-                <FaClipboard />
-              </span>
+      <div className="FundingHero-center">
+        <p className="FundingHero-whatis">
+          What is <span className="FundingHero-highlight">Paxium</span>
+        </p>
+      </div>
+
+      <div className="FundingHero-center">
+        <p className="FundingHero-peace">
+          Peace, Unity, Integrity, and Hope for All.
+        </p>
+      </div>
+
+      <div className="FundingHero-lorum-container">
+        <p className="FundingHero-lorum">
+          Lorem ipsum dolor sit amet consectetur. Gravida sit eleifend morbi
+          faucibus ut urna. Sem urna arcu massa ultrices nec urna velit.
+          Tincidunt nunc lobortis cursus suscipit id ultricies nec. Tellus
+          feugiat amet massa nunc.
+        </p>
+      </div>
+
+      <div className="FundingHero-main-divs">
+        <div className="FundingHero-box1">
+          <div className="FundingHero-box-padding">
+            <div className="FundingHero-box-header">
+              <p className="FundingHero-box-title">Slots Available</p>
+              <p className="FundingHero-box-number">65,00,000</p>
+            </div>
+            <p className="FundingHero-box-description">
+              You’ll get $10 worth of dollars by clicking on claim free token
             </p>
-            <p>
-              Pair Address:
-              <span className="token-address">
-                <span className="address">
-                  0x87c70E86D8eB816B5685cAb4515B168Aa9d2297c
-                </span>
-                <FaClipboard />
-              </span>
-            </p>
+            <button className="FundingHero-claim-btn">
+              <b>CLAIM FREE TOKEN</b>
+            </button>
           </div>
         </div>
-        <div className="funding-hero-image">
-          <div
-            className="card-container"
-            style={{ backgroundColor: "#F9FEEA", color: "black" }}
-          >
-            <div className="next-price-text">
-              <h6>NEXT PRICE INCREASE IN</h6>
-            </div>
-            <div className="time-card">
-              <div className="time-duration">
-                <span>{String(timeLeft.days).padStart(2, "0")}</span>
-                <span>Days</span>
-              </div>
-              <div className="time-duration">
-                <span>{String(timeLeft.hours).padStart(2, "0")}</span>
-                <span>Hours</span>
-              </div>
-              <div className="time-duration">
-                <span>{String(timeLeft.minutes).padStart(2, "0")}</span>
-                <span>Minutes</span>
-              </div>
-              <div className="time-duration">
-                <span>{String(timeLeft.seconds).padStart(2, "0")}</span>
-                <span>Seconds</span>
-              </div>
-            </div>
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column ",
-                gap: "2px",
-                alignItems: "center",
-                marginTop: "8px",
-              }}
-            >
-              <div
-                className="progressbar-container_us"
-                style={{ marginTop: "20px" }}
-              >
-                <div
-                  className="progressbar-complete"
-                  style={{ width: `${formattedPercentage}%` }}
-                ></div>
-                <div className="progress_us">
-                  <span
-                    style={{ fontWeight: "bold" }}
-                  >{`${formattedPercentage}%`}</span>
-                  <span>({TotalBJ - remainingBJ} BJ Remaining)</span>
-                </div>
-              </div>
-              <span style={{ fontWeight: "bolder" }}>
-                {" "}
-                No of Holders: 1000{" "}
-              </span>
-              <span style={{ fontWeight: "bolder" }}>
-                {" "}
-                USDT RAISED: $160,010.56{" "}
-              </span>
-              <span style={{ fontWeight: "bolder" }}>
-                {" "}
-                Your purchased BadJoke : 0{" "}
-              </span>
-            </div>
-
-            <h2 className="hr-lines">1 BJ = $0.000294</h2>
-           
-            <div className="currency-btn">
-             <div style={{position:"relative"}}>
-             <input
-                placeholder="1 USDT"
-                name="USDT"
-                className="btc-btn"
-                value={usdtAmount}
-                onChange={handleUsdtChange}
-                
-              />
-                <img src={usdtImage} alt="USDT" className="input-icon" />
-             </div>
-
-             <div style={{position:"relative"}}>
-             <input
-                placeholder={bjAmount ? bjAmount.toFixed(2) + " BJ" : "0 BJ"}
-                disabled={true}
-                name="BJ"
-                className="btc-btn"
-              />
-                  <img src={bjImage} alt="BJ" className="input-icon" />
-             </div>
-
-            </div>
-            <div style={{ marginTop: "8px", textAlign: "center" }} className="address-text">
-              <span >0x87c70E86D8eB816B5685cAb4515B168Aa9d2297c</span>
-            </div>
-            <div className="wallet-btn">
-              <button>Buy</button>
-            </div>
-            {/* <div style={{ marginTop: "10px", textAlign: "center", color: "black", fontWeight: "700" }}>
-             
-            </div> */}
+        <div className="FundingHero-box2">
+          <div className="FundingHero-box-padding">
+            <p className="FundingHero-input-title">Paste Referral Link</p>
+            <input className="FundingHero-input-type" />
+            <p className="FundingHero-input-title">Paste Referral Link</p>
+            <input className="FundingHero-input-type" />
           </div>
         </div>
+      </div>
+
+      <div className="FundingHero-images-link">
+        <img src={twitter} alt="Twitter" />
+        <img src={discord} alt="Discord" />
+        <img src={telegram} alt="Telegram" />
+        <img src={instagram} alt="Instagram" />
       </div>
     </div>
   );
