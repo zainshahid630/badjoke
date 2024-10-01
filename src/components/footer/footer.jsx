@@ -1,7 +1,7 @@
 import "./footer.css";
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import badjoke from '../../assets/Paxium.png';
+import Paxium from '../../assets/Paxium.png';
 
 import twitter from '../../assets/twitter.png';
 import discord from '../../assets/dics.png';
@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="footer-container">
       {/* Logo Section */}
       <div className="footer-logo">
-        <img src={badjoke} alt="Paxium Logo" />
+        <img src={Paxium} alt="Paxium Logo" />
       </div>
 
       {/* Links Section */}

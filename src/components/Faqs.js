@@ -11,20 +11,20 @@ const copyToClipboard = (address) => {
 };
 
 function Frequentlyquestion() {
-  const BadjokeAddress = "YOUR_BADJOKE_ADDRESS"; // Replace with actual address
+  const PaxiumAddress = "YOUR_Paxium_ADDRESS"; // Replace with actual address
   const SWAPTOEKNADDRESS = "YOUR_SWAP_TOKEN_ADDRESS"; // Replace with actual address
 
   return (
     <Accordion className="FAQs-accordion">
       <Accordion.Item eventKey="0" className="FAQs-accordion-item">
         <Accordion.Header className="FAQs-accordion-header">
-          What is Badjoke? <span></span>
+          What is Paxium? <span></span>
         </Accordion.Header>
         <Accordion.Body className="FAQs-accordion-body">
-          Badjoke is a unique meme coin launched on the Binance Smart Chain.
+          Paxium is a unique meme coin launched on the Binance Smart Chain.
           <div style={{ marginTop: '10px' }}>
-            <span className="FAQs-copy-text" onClick={() => copyToClipboard(BadjokeAddress)}>
-              <FaCopy /> Copy Badjoke Address
+            <span className="FAQs-copy-text" onClick={() => copyToClipboard(PaxiumAddress)}>
+              <FaCopy /> Copy Paxium Address
             </span>
           </div>
           <div style={{ marginTop: '10px' }}>

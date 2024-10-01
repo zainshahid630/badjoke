@@ -4,7 +4,7 @@ import FAQs from "../../components/faq/faq";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
 import Hero from "../../components/hero/hero";
-import badJoke from "../../components/badJoke/badJoke";
+import Paxium from "../../components/badJoke/badJoke";
 import Partners from "../../components/partners/partners";
 import Refill from "../../components/refill/refill";
 import RoadMap from "../../components/roadmap/roadmap";
@@ -33,7 +33,7 @@ const Home = () => {
             </div>
  
 
-            <badJoke />
+            <Paxium />
             <div style={{ backgroundImage: `url(${buyimage})` , backgroundRepeat:'round' }} >
             <Buy />
             </div>

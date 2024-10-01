@@ -1,7 +1,7 @@
 import './header.css'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import badjoke from '../../assets/Paxium.png'
+import Paxium from '../../assets/Paxium.png'
 
 const Header = () => {
     const [sidebarDisplay, setSidebarDisplay] = useState('')
@@ -39,7 +39,7 @@ const Header = () => {
                     </div>
                     <div className="header-left">
                         <div className="header-logo">
-                            <img src={badjoke} alt="" />
+                            <img src={Paxium} alt="" />
                         </div>
                     </div>
                     <div className={`header-right ${sidebarDisplay}`}>

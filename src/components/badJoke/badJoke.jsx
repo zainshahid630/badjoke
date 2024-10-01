@@ -10,20 +10,20 @@ import "./badJoke.css";
 
 const data = [img1, img2, img3  , img4 , img5 , img6 , img1 , img2, img3  , img4 , img5 , img6 ];
 
-const badJoke = () => {
+const Paxium = () => {
   return (
-    <div className="badJoke-container">
-          <h1 className="badJoke-heading">
+    <div className="Paxium-container">
+          <h1 className="Paxium-heading">
            featured in
           </h1>
-      <div className="badJoke-wrapper">
+      <div className="Paxium-wrapper">
 
-        <div className="badJoke-content">
+        <div className="Paxium-content">
        
-          <div className="badJoke-scroll-wrapper">
-            <div className="badJoke-scroll">
+          <div className="Paxium-scroll-wrapper">
+            <div className="Paxium-scroll">
               {data.map((itm, idx) => (
-                <div key={idx} className="badJoke-item">
+                <div key={idx} className="Paxium-item">
                   <img src={itm} alt="feature" />
                 </div>
               ))}
@@ -35,4 +35,4 @@ const badJoke = () => {
   );
 };
 
-export default badJoke;
+export default Paxium;
