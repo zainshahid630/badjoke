@@ -33,7 +33,7 @@ const Home = () => {
             </div>
  
 
-            <Paxium />
+            {/* <Paxium /> */}
             <div style={{ backgroundImage: `url(${buyimage})` , backgroundRepeat:'round' }} >
             <Buy />
             </div>
@@ -50,6 +50,7 @@ const Home = () => {
              </div> */}
 
             <FAQs />
+          
             <Footer />
         </div>
     );

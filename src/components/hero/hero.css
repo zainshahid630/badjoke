@@ -1,592 +1,607 @@
 .funding-hero {
+  padding: 3rem 0;
+}
 
-    padding: 3rem 0;
+.funding-hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
 
+.funding-hero-text {
+  width: 50%;
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.funding-hero-text p {
+  font-size: 1.125rem; /* equivalent to md:text-lg */
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+.badjoke {
+  font-size: 50px;
+}
+
+.funding-hero-title {
+  color: rgba(232, 252, 175, 1) !important;
+  font-weight: bold;
+  font-size: 2.25rem; /* equivalent to text-3xl */
+  margin-top: 0.75rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.funding-hero-subtitle {
+  color: white;
+  font-size: 0.875rem; /* equivalent to max-md:text-sm */
+  font-style: italic;
+  margin-bottom: 1.75rem;
+  letter-spacing: 3px;
+}
+
+.hero-btn-wrapper {
+  margin-top: 12px;
+  display: flex;
+  gap: 27px;
+  align-items: center;
+}
+.whitepaper-btn {
+  padding: 16px 60px;
+  border-radius: 8px;
+  background-color: rgba(232, 252, 175, 1) !important;
+  border-color: black !important;
+  box-shadow: 0 6px #00000040;
+  color: black !important;
+}
+.audit-btn {
+  padding: 16px 60px;
+  border-radius: 8px;
+  background-color: rgba(141, 202, 162, 1) !important;
+  border-color: #333 !important;
+  box-shadow: 0 6px #00000040;
+  color: black;
+  font-weight: 700;
+}
+.card-container {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #333333;
+  margin: 0 auto;
+  padding: 20px; /* Add padding to the container to create space inside */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.next-price-text {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; /* Adjust bottom margin for space between text and card */
+}
+
+.time-card {
+  color: white;
+  padding: 10px 12px;
+  background: #172b24;
+  border-radius: 12px;
+  display: flex;
+  flex: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.time-duration {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center; /* Center the text inside the time-duration */
+  position: relative; /* Allow positioning of the colon */
+}
+
+.funding-hero-image {
+  width: 50%;
+  padding: 0 0.5rem;
+}
+.hr-lines {
+  margin-top: 15px;
+  position: relative;
+  text-align: center;
+}
+.hr-lines:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: red;
+}
+.hr-lines:after {
+  content: " ";
+  height: 2px;
+  width: 80px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.currency-btn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btc-btn {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 10px;
+  border-radius: 4px;
+  color: black;
+  background-color: rgb(249, 254, 234);
+  box-sizing: border-box;
+}
+.address-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.wallet-btn {
+  min-width: 110px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: 2px solid #007aff !important;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 19.2px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .funding-hero {
+    padding: 4rem 0;
   }
-  
   .funding-hero-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  .funding-hero-text {
-    width: 50%;
-    padding: 0 0.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .funding-hero-text p {
-    font-size: 1.125rem; /* equivalent to md:text-lg */
-    color: white;
-    font-weight: 500;
-    font-style: italic;
-    letter-spacing: 3px;
-   
-  }
-  .Paxium{
-    font-size: 50px;
-  }
-  
-  .funding-hero-title {
-    color: rgba(232, 252, 175, 1) !important;
-    font-weight: bold;
-    font-size: 2.25rem; /* equivalent to text-3xl */
-    margin-top: 0.75rem;
-    margin-bottom: 1.25rem;
-    line-height: 1.2;
-  }
-  
-  .funding-hero-subtitle {
-    color: white;
-    font-size: 0.875rem; /* equivalent to max-md:text-sm */
-    font-style: italic;
-    margin-bottom: 1.75rem;
-    letter-spacing: 3px;
-  }
-  
-
-  .hero-btn-wrapper{
-    margin-top: 12px;
-    display: flex;
-    gap: 27px;
-    align-items: center;
-  }
-  .whitepaper-btn{
-    padding: 16px 60px;
-    border-radius: 8px;
-    background-color: rgba(232, 252, 175, 1) !important;
-    border-color: black !important;
-    box-shadow: 0 6px #00000040;
-    color:black !important
-  }
-  .audit-btn{
-    padding: 16px 60px;
-    border-radius: 8px;
-    background-color: rgba(141, 202, 162, 1) !important;
-    border-color: #333 !important;
-    box-shadow: 0 6px #00000040;
-    color: black;
-    font-weight: 700;
-  }
-  .card-container {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 20px;
-    border: 2px solid #333333;
-    margin: 0 auto;
-    padding: 20px; /* Add padding to the container to create space inside */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-  }
-  
-  .next-price-text {
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 20px; /* Adjust bottom margin for space between text and card */
-  }
-  
-  .time-card {
-    color: white;
-    padding: 10px 12px;
-    background: #172B24;
-    border-radius: 12px;
-    display: flex;
-    flex: row;
-    gap: 2rem;
-    justify-content:center ;
-  }
-  
-  .time-duration {
-    display: flex;
     flex-direction: column;
-    gap: 3px;
-    align-items: center; /* Center the text inside the time-duration */
-    position: relative; /* Allow positioning of the colon */
   }
-  
+  .funding-hero-text {
+    width: 100%;
+  }
   .funding-hero-image {
-    width: 50%;
-    padding: 0 0.5rem;
+    width: 100%;
   }
-  .hr-lines{
-    margin-top: 15px;
-    position: relative;
-    text-align: center;
+  .hero-btn-wrapper {
+    flex-direction: column;
+    margin-top: 2rem;
   }
-  .hr-lines:before{
-    content:" ";
-    display: block;
-    height: 2px;
-    width: 80px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background: red;
+
+  .funding-hero-text p {
+    font-size: 1.125rem;
   }
-  .hr-lines:after{
-    content:" ";
-    height: 2px;
-    width: 80px;
-    background: red;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-  }  
-  .currency-btn{
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 10px;
+
+  .funding-hero-title {
+    font-size: 3.75rem; /* equivalent to md:text-6xl */
   }
-  
-  .btc-btn {
-    width: 100%; 
-    max-width: 100%; 
-    padding: 10px 10px;
-    border-radius: 4px;
-    color: black;
-    background-color: rgb(249, 254, 234);
-    box-sizing: border-box; 
+  .time-card {
+    gap: 1rem;
   }
-  .address-text {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: center; 
-    margin-top: 8px;
+  .hr-lines:before {
+    width: 40px;
   }
-  
-  .wallet-btn{
-    min-width: 110px;
-    padding: 10px 30px;
-    border-radius: 8px;
-    border: 2px solid #007AFF !important;
-    margin-top: 10px;
-    text-align: center;
-    line-height: 19.2px;
-    letter-spacing: 1px;
-  }  
-  
-  
-  @media (max-width: 768px) {
-    .funding-hero {
-      padding: 4rem 0;
-    }
-    .funding-hero-container{
-      flex-direction: column;
-    }
-    .funding-hero-text{
-      width: 100%;
-    }
-    .funding-hero-image{
-      width: 100%;
-    }
-    .hero-btn-wrapper{
-     flex-direction: column;
-     margin-top: 2rem;
-    }
-  
-    .funding-hero-text p {
-      font-size: 1.125rem;
-    }
-  
-    .funding-hero-title {
-      font-size: 3.75rem; /* equivalent to md:text-6xl */
-    }
-    .time-card{
-      gap: 1rem;
-    }
-    .hr-lines:before{
-     
-      width: 40px;
-     
-    }
-    .hr-lines:after{
-      
-      width: 40px;
-   
-    } 
-    /* .btc-btn,
+  .hr-lines:after {
+    width: 40px;
+  }
+  /* .btc-btn,
     .eth-btn{
       padding: 10px 46px;
     }  */
-    
-  }
+}
 
-  
-  
+.input-icon {
+  width: 12%;
+  position: absolute;
+  top: 18%;
+  right: 8px;
+}
 
+.progressbar-container_us {
+  color: black;
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #182a24;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 
-  
-  
- 
-  
-  .input-icon {
-    width: 12%;
-    position: absolute;
-    top: 18%;
-    right: 8px;
-  }
-  
+  justify-content: center;
+  overflow: hidden;
+}
 
-  .progressbar-container_us {
-    color: black;
-    position: relative;
-    width: 100%;
-    height: 30px;
-    border: 1px solid #182a24;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+.progressbar-container_us .progressbar-complete {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  background-image: linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 0.15) 25%,
+    transparent 0,
+    transparent 50%,
+    hsla(0, 0%, 100%, 0.15) 0,
+    hsla(0, 0%, 100%, 0.15) 75%,
+    transparent 0,
+    transparent
+  );
+  background-size: 1rem 1rem;
+  animation: g 2500ms infinite ease-in-out;
+  background-color: #182a24 !important;
+  border-radius: 10px;
+  z-index: 2;
+  animation: 1s linear infinite progress-bar-stripes;
+}
 
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .progressbar-container_us .progressbar-complete {
-    position: absolute;
-    left: 0;
-    top: 0px;
-    height: 100%;
-    background-image: linear-gradient(45deg, hsla(0, 0%, 100%, .15) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15) 75%, transparent 0, transparent);
-    background-size: 1rem 1rem;
-    animation: g 2500ms infinite ease-in-out;
-    background-color: #182a24 !important;
-    border-radius: 10px;
-    z-index: 2;
-    animation: 1s linear infinite progress-bar-stripes;
-  }
-  
-  .progressbar-container_us .progressbar-complete .progressbar-liquid {
-    animation: 1s linear infinite progress-bar-stripes;
-    width: 70px;
-    height: 70px;
-    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 50%, black 50%, black 75%, transparent 75%, transparent) !important;
-    background-size: 1rem 1rem;
-    animation: g 2500ms infinite ease-in-out, r 3000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
-    position: absolute;
-    right: -5px;
-    top: -10px;
-    background-color: #dc3545 !important;
-    border-radius: 40%;
-  }
-  
-  .progressbar-container_us .progress_us {
-    z-index: 2;
-  }
-  .AddressContainor{
-  
-    padding: 10px;
-    margin-top: 30px;
-    font-weight: bolder;
-  }
+.progressbar-container_us .progressbar-complete .progressbar-liquid {
+  animation: 1s linear infinite progress-bar-stripes;
+  width: 70px;
+  height: 70px;
+  background-image: linear-gradient(
+    45deg,
+    black 25%,
+    transparent 25%,
+    transparent 50%,
+    black 50%,
+    black 75%,
+    transparent 75%,
+    transparent
+  ) !important;
+  background-size: 1rem 1rem;
+  animation: g 2500ms infinite ease-in-out,
+    r 3000ms infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background-color: #dc3545 !important;
+  border-radius: 40%;
+}
 
+.progressbar-container_us .progress_us {
+  z-index: 2;
+}
+.AddressContainor {
+  padding: 10px;
+  margin-top: 30px;
+  font-weight: bolder;
+}
 
+.token-address {
+  display: inline-flex;
+  align-items: center;
+}
+
+.address {
+  word-break: break-all; /* Allows the address to break into multiple lines if necessary */
+  margin-right: 0.5rem; /* Adds space between the address and the icon */
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
   .token-address {
-    display: inline-flex;
-    align-items: center;
+    flex-wrap: wrap; /* Allows the address to wrap on smaller screens */
   }
-  
+
   .address {
-    word-break: break-all; /* Allows the address to break into multiple lines if necessary */
-    margin-right: 0.5rem; /* Adds space between the address and the icon */
-    display: inline-block;
+    width: 100%;
   }
-  
-  @media (max-width: 600px) {
-    .token-address {
-      flex-wrap: wrap; /* Allows the address to wrap on smaller screens */
-    }
-  
-    .address {
-      width: 100%;
-    }
-  }
-  .input-icon {
-  
-    top: 30%;
-    right: 8px;
+}
+.input-icon {
+  top: 30%;
+  right: 8px;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partners-head {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e8fcae;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  flex: 1 1 300px;
+  margin: 10px;
+  max-width: 260px;
+}
+
+.road-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.numimage {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.content {
+  color: #fff;
+}
+
+.content h5 {
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+.FundingHero-container {
+  padding: 20px;
+  background-position: center;
+}
+
+.FundingHero-center {
+  display: flex;
+  justify-content: center;
+}
+
+.FundingHero-whatis {
+  /* font-size: 36px; */
+  /* margin-top: 20px; */
+  /* text-align: center; */
+}
+
+.FundingHero-highlight {
+  color: rgba(0, 255, 255, 1);
+  font-size: 87.68px;
+  font-weight: 800;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+}
+.what-is {
+  color: rgba(0, 255, 255, 1);
+  font-size: 59px;
+  font-weight: 600;
+  letter-spacing: 0.82px;
+}
+.FundingHero-peace {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: -22px;
+}
+
+.FundingHero-lorum {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.FundingHero-main-divs {
+  display: flex;
+  /* justify-content: center; */
+ 
+  max-width: 80%;
+  gap: 1.5rem;
+  margin: auto;
+  flex-wrap: wrap;
+
+ 
+}
+
+.FundingHero-box1,
+.FundingHero-box2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(18px);
+  box-shadow: 1px 3px 14px 0px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 50px;
+  padding: 1.5rem;
+  /* width: 48%; */
+  /* margin-bottom: 20px; */
+  flex: 1 1;
 }
 
 
-  
+
+.FundingHero-box-header {
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(11px);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 14px;
+  padding: 7px 14px;
+
+}
+
+.FundingHero-box-title {
+  font-size: 24px;
+}
+
+.FundingHero-box-number {
+  font-size: 24px;
+}
+
+.FundingHero-box-description {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.FundingHero-claim-btn {
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+ justify-content: center;
+ margin-top: 2rem;
+}
+.FundingHero-claim-btn,
+.FundingHero-buy-btn 
+button {
+   text-align: center;
+   color: rgba(4, 88, 93, 1);
+   font-size: 22px;
+   font-weight: 700;
+   
+
+}
+.FundingHero-buy-btn {
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+ justify-content: center;
+margin-top: 1rem;
+}
 
 
-  .partners {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
+.paste-text {
+  font-size: 22px;
+  /* margin-top: 8px; */
+}
+
+.FundingHero-input-type {
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 14px;
+  /* background-color: #0000004d; */
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(11px);
   
-  .box {
-    width: 100%;
+}
+
+.FundingHero-images-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.FundingHero-images-link img {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .FundingHero-whatis{
+      text-align: center;
   }
-  
-  .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+  .what-is
+ 
+   {
+    font-size: 28px;
   }
-  
-  .partners-head {
+  .FundingHero-highlight{
+    font-size: 45px;
+  }
+  .FundingHero-lorum{
+   font-size: 16px;
+   text-align: center;
+  }
+  .FundingHero-main-divs{
+    max-width: 100%;
+  }
+  .FundingHero-peace{
     text-align: center;
-    margin-bottom: 20px;
-    color: #e8fcae;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .col {
-    flex: 1 1 300px;
-    margin: 10px;
-    max-width: 260px;
-  }
-  
-
-  
-  .road-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .numimage {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: black;
-  }
-  
-  .content {
-    color: #fff;
-  }
-  
-  .content h5 {
-    margin-bottom: 10px;
-  }
-  
-  .content p {
-    margin-bottom: 0;
-    color: #ccc;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-  .FundingHero-container {
-    padding: 20px;
-    background-position: center;
-  }
-  
-  .FundingHero-center {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .FundingHero-whatis {
-    font-size: 36px;
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .FundingHero-highlight {
-    color: #00FFFF;
+    margin-top: 22px;
   }
   
   .FundingHero-peace {
-    font-size: 24px;
-    text-align: center;
-  }
-  
-  .FundingHero-lorum-container {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .FundingHero-lorum {
-    font-size: 18px;
-    margin: 0 10px;
-  }
-  
-  .FundingHero-main-divs {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .FundingHero-box1, .FundingHero-box2 {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    width: 48%;
-    margin-bottom: 20px;
-  }
-  
-  .FundingHero-box-padding {
-    padding: 20px;
-  }
-  
-  .FundingHero-box-header {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .FundingHero-box-title {
-    font-size: 24px;
-  }
-  
-  .FundingHero-box-number {
-    font-size: 24px;
-  }
-  
-  .FundingHero-box-description {
-    font-size: 16px;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .FundingHero-claim-btn {
-    background: linear-gradient(145deg, #00e5e5, #00bfbf); /* Gradient for a shiny look */
-    color: black;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto 0;
-    
-    /* 3D Effect */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15), /* soft shadow */
-                0 4px 6px rgba(0, 0, 0, 0.1);  /* depth shadow */
-  
-    /* Text shadow for additional pop */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    
-    /* Transition for a smooth hover effect */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  }
-  
-  /* Hover state */
-  .FundingHero-claim-btn:hover {
-    transform: translateY(-3px); /* Lifts button slightly */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), /* deeper shadow */
-                0 6px 8px rgba(0, 0, 0, 0.15); /* depth shadow */
-  }
-  
-  /* Active/Pressed state */
-  .FundingHero-claim-btn:active {
-    transform: translateY(1px); /* Slight press down effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), /* pressed shadow */
-                0 3px 5px rgba(0, 0, 0, 0.1);  /* depth shadow */
-  }
-  
-  
-  .FundingHero-input-title {
     font-size: 20px;
-    margin-top: 20px;
   }
-  
+
+
+  .FundingHero-box-header p {
+    font-size: 20px;
+  }
+
+  .FundingHero-box-description {
+    font-size: 14px;
+  }
+
+  .FundingHero-input-title {
+    font-size: 16px;
+  }
+
   .FundingHero-input-type {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    background-color: #0000004D;
+    font-size: 14px;
   }
-  
-  .FundingHero-images-link {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+  .FundingHero-whatis {
+    font-size: 24px;
   }
-  
+
+  .FundingHero-peace {
+    font-size: 18px;
+  }
+
+  .FundingHero-box-title,
+  .FundingHero-box-number {
+    font-size: 18px;
+  }
+
+  .FundingHero-box-description {
+    font-size: 12px;
+  }
+
+  .FundingHero-input-title {
+    font-size: 14px;
+  }
+
+  .FundingHero-input-type {
+    font-size: 12px;
+  }
+
+  .FundingHero-claim-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
   .FundingHero-images-link img {
-    margin: 0 10px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .FundingHero-whatis {
-      font-size: 28px;
-    }
-  
-    .FundingHero-peace {
-      font-size: 20px;
-    }
-  
-    .FundingHero-box1, .FundingHero-box2 {
-      width: 100%;
-    }
-  
-    .FundingHero-box-header p {
-      font-size: 20px;
-    }
-  
-    .FundingHero-box-description {
-      font-size: 14px;
-    }
-  
-    .FundingHero-input-title {
-      font-size: 16px;
-    }
-  
-    .FundingHero-input-type {
-      font-size: 14px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .FundingHero-whatis {
-      font-size: 24px;
-    }
-  
-    .FundingHero-peace {
-      font-size: 18px;
-    }
-  
-    .FundingHero-box-title, .FundingHero-box-number {
-      font-size: 18px;
-    }
-  
-    .FundingHero-box-description {
-      font-size: 12px;
-    }
-  
-    .FundingHero-input-title {
-      font-size: 14px;
-    }
-  
-    .FundingHero-input-type {
-      font-size: 12px;
-    }
-  
-    .FundingHero-claim-btn {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  
-    .FundingHero-images-link img {
-      width: 30px;
-      height: 30px;
-    }
-  }
-  
+}

@@ -27,7 +27,7 @@ const Header = () => {
     }
 
     return (
-        <div style={{display:'flex',justifyContent:'center'}}>
+        <div >
         <div className='header'>
             <div className="wrapper full">
                 <div className="header-cont">

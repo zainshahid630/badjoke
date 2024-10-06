@@ -1,214 +1,3 @@
-/* Global styles */
-.faqs-container {
-    padding: 3rem 2rem;
-  }
-  
-  .faqs-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-  
-  .faqs-header {
-    font-size: 32px;
-  }
-  
-  .faqs-description {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  
-  .faqs-content {
-    width: 100%;
-    max-width: 650px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  /* FAQ Item styles */
-  .faq-item {
-    transition: all 0.3s;
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 12px;
-    padding: 18px;
-  }
-  
-  .faq-item.active,
-  .faq-item:hover {
-    background-color: var(--accent-secondary);
-  }
-  
-  .faq-item-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .faq-icon {
-    transition: transform 0.3s;
-  }
-  
-  .faq-icon.rotate {
-    transform: rotate(180deg);
-  }
-  
-  .faq-question {
-    font-size: 1.125rem; /* Equivalent to Tailwind's text-lg */
-  }
-  
-  .faq-answer {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 1rem; /* Equivalent to Tailwind's text-base */
-    margin-top: 0.75rem;
-  }
-  
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
-    .faqs-container {
-      padding: 3rem 1rem;
-    }
-  
-    .faqs-wrapper {
-      flex-direction: column;
-    }
-  
-    .faqs-content {
-      max-width: 100%;
-    }
-  }
-  
-  /* Custom properties for colors */
-  :root {
-    --accent-secondary: #3490dc; /* Example color, adjust according to your design */
-  }
-  
-
-
-
-  .FAQs-container {
-    background-color: rgb(37, 37, 37);
-    padding: 50px 0;
-    color: #e8fcaf;
-  }
-  
-  .FAQs-title {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .FAQs-heading {
-    font-size: 3rem; /* Base size for large screens */
-    color: #e8fcaf;
-  }
-  
-  .FAQs-highlight {
-    color: #00ffff;
-  }
-  
-  /* Spacer class for consistent spacing */
-  .FAQs-spacer {
-    margin-bottom: 20px;
-  }
-  
-  /* Responsive font sizes for different screen sizes */
-  @media (max-width: 1200px) {
-    .FAQs-heading {
-      font-size: 2.5rem; /* Adjust font size for smaller screens */
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .FAQs-heading {
-      font-size: 2rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .FAQs-heading {
-      font-size: 1.75rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .FAQs-heading {
-      font-size: 1.5rem; /* Smallest font size for mobile devices */
-    }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-  /* Accordion styles */
-.FAQs-accordion .accordion-item {
-  background-color: black;
-  color: white;
-  border: none;
-}
-
-.FAQs-accordion .accordion-header {
-  background-color: black;
-  color: white;
-}
-
-.FAQs-accordion .accordion-body {
-  background-color: black;
-  color: white;
-}
-
-.FAQs-accordion .accordion-button {
-  background-color: black;
-  color: white;
-  border: none;
-}
-
-.FAQs-accordion .accordion-button:not(.collapsed) {
-  background-color: black;
-  color: white;
-  box-shadow: none;
-}
-
-.FAQs-accordion .accordion-button:hover {
-  background-color: #333;
-}
-
-.FAQs-accordion .FAQs-copy-text {
-  cursor: pointer;
-  color: cyan;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.FAQs-accordion .FAQs-copy-text:hover {
-  color: lightcyan;
-}
-
-.FAQs-accordion-item {
-  border: 1px solid #444; /* Optional border for styling */
-  margin-bottom: 10px;
-  border-radius: 8px;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* Container */
 .footer-container {
@@ -268,4 +57,50 @@
 
 .footer-icon:hover {
   transform: scale(1.1);
+}
+
+
+.faqs-card{
+  max-width: 70%;
+  margin: auto;
+  padding: 40px 25px ;
+  box-shadow: 0px 0px 14px 5px rgba(0, 255, 255, 0.5);
+  background: #00000066;
+  border-radius: 57px;
+}
+.faq-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-questions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-text{
+  font-size: 26px;
+  font-weight: 600;
+}
+.faq-heading{
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.questions-head{
+ color: rgba(0, 255, 255, 1);
+
+}
+@media screen and (max-width: 768px){
+  .faq-heading{
+    font-size: 24px;
+    padding: 0 10px;
+  }
+  .faqs-card{
+    max-width: 88%;
+  }
+  .faq-text{
+    font-size: 16px;
+  }
 }

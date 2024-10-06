@@ -107,7 +107,7 @@
   .buy-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
   
   .buy-war-info {
@@ -148,8 +148,9 @@
   
   .buy-pagination-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 20px;
+    justify-content: flex-end;
   }
   
   .buy-pagination-btn {

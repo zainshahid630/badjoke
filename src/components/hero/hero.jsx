@@ -73,28 +73,27 @@ const FundingHero = () => {
     >
       <div className="FundingHero-center">
         <p className="FundingHero-whatis">
-          What is <span className="FundingHero-highlight">Paxium</span>
+         <span className="what-is"> What is</span> <span className="FundingHero-highlight">PAXIUM?</span>
         </p>
       </div>
-
-      <div className="FundingHero-center">
-        <p className="FundingHero-peace">
+      <p className="FundingHero-peace">
           Peace, Unity, Integrity, and Hope for All.
         </p>
-      </div>
 
-      <div className="FundingHero-lorum-container">
+
+    
         <p className="FundingHero-lorum">
           Lorem ipsum dolor sit amet consectetur. Gravida sit eleifend morbi
           faucibus ut urna. Sem urna arcu massa ultrices nec urna velit.
           Tincidunt nunc lobortis cursus suscipit id ultricies nec. Tellus
           feugiat amet massa nunc.
         </p>
-      </div>
+        <br/>
+        <br/>
 
       <div className="FundingHero-main-divs">
         <div className="FundingHero-box1">
-          <div className="FundingHero-box-padding">
+          
             <div className="FundingHero-box-header">
               <p className="FundingHero-box-title">Slots Available</p>
               <p className="FundingHero-box-number">65,00,000</p>
@@ -102,20 +101,28 @@ const FundingHero = () => {
             <p className="FundingHero-box-description">
               You’ll get $10 worth of dollars by clicking on claim free token
             </p>
-            <button className="FundingHero-claim-btn">
-              <b>CLAIM FREE TOKEN</b>
+            <div className="FundingHero-claim-btn">
+            <button >
+            CLAIM FREE TOKEN
             </button>
-          </div>
+            </div>
+         
         </div>
 
         <div className="FundingHero-box2">
-          <div className="FundingHero-box-padding">
-            <p className="FundingHero-input-title">Paste Referral Link</p>
+          
+            <p className="paste-text">Paste Referral Link</p>
+            <input className="FundingHero-input-type" placeholder="eg:" />
+            <p className="paste-text">Enter Amount</p>
             <input className="FundingHero-input-type" />
-            <p className="FundingHero-input-title">Paste Referral Link</p>
-            <input className="FundingHero-input-type" />
+          
+            <div className="FundingHero-buy-btn">
+            <button >
+             BUY
+            </button>
+            </div>
           </div>
-        </div>
+    
       </div>
 
       <div className="FundingHero-images-link">

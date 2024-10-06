@@ -1,31 +1,50 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Frequentlyquestion from "../Faqs";
-import './faq.css';
-import image from '../../assets/Faq.png';
+import "./faq.css";
+import { FaPlus } from "react-icons/fa";
 
 const FAQs = () => {
   return (
-    <section className="FAQs-container container-fluid text-center">
-      <Row>
-        <Container>
-          <Row>
-            <Col xl="12" lg="12">
-              <div className="FAQs-title">
-                <p className="FAQs-heading">
-                  Frequently asked <span className="FAQs-highlight">Questions</span>
-                </p>
-              </div>
-            </Col>
-            <div className="FAQs-spacer" />
-            <Col xl="10" lg="10">
-              <Frequentlyquestion />
-            </Col>
-            <div className="FAQs-spacer" />
-          </Row>
-        </Container>
-      </Row>
-    </section>
+    <div style={{ background: 'rgb(37, 37, 37)' }}>
+     <div className="faq-heading">
+      <span >FREQUENTLY ASKED <span className="questions-head">QUESTIONS</span></span>
+     </div>
+      <div className="faqs-card">
+        <div className="faq-wrapper">
+          <div className="faq-questions">
+            <p className="faq-text">What is PEXIUM?</p>
+            <FaPlus />
+          </div>
+          <hr />
+          <div className="faq-questions">
+            <p className="faq-text">How can I buy PEXIUM?</p>
+            <FaPlus />
+          </div>
+          <hr />
+          <div className="faq-questions">
+            <p className="faq-text">What is the Utility of PEXIUM Coin?</p>
+            <FaPlus />
+          </div>
+          <hr />
+          <div className="faq-questions">
+            <p className="faq-text">
+              Why totally PEXIUM, why not any other coin?
+            </p>
+            <FaPlus />
+          </div>
+          <hr />
+          <div className="faq-questions">
+            <p className="faq-text">What are the benefits of PEXIUM?</p>
+            <FaPlus />
+          </div>
+          <hr />
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+    </div>
   );
 };
 
