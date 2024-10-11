@@ -4,9 +4,30 @@ import logotoken from '../../assets/bg-notoken.png';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import { useAccount } from 'wagmi';
+import { ClaimerRewardHistory } from '../../utils/Calls';
+import { useState } from 'react';
+
+
+
 
 
 const RoadMap = () => {
+
+    const { address, isConnecting, isDisconnected ,connector  } = useAccount();
+    const [claimHistory , setclaimHistory] = useState()
+
+
+    useState(()=>{
+    ClaimerRewardHistory(address).then((his)=>{
+        console.log('ClaimerRewardHistory',his)
+        setclaimHistory(his)
+      }).catch(()=>{
+  
+      })
+    },[address])
+
+
     return (
         <div className='roadmap-container'>
             <div className="roadmap-padding">
@@ -18,7 +39,14 @@ const RoadMap = () => {
                     <p className="roadmap-subheading">Referral Link</p>
                     <div className="roadmap-link-container">
                         <div className="roadmap-link-box">
-                            fd476tr4y4rt764fhhf76fh8f4hr65yhuht5hf5yt5nf8748jdowyr834h546567u76h67uynyyedw34rcfj869kj
+                            {
+                                claimHistory?.hasClaimed 
+                                ?  
+                                `https://Paxium.site/${address}` 
+                                : 'Claim or Buy Token First '
+
+                            }
+                            
                         </div>
                         <div className="roadmap-copy-box">
                             Copy link

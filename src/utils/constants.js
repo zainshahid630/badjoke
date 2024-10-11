@@ -1,3 +1,5 @@
+import Web3 from "web3";
+
 export const faqs = [
     {
       q: "What is this software list?",
@@ -20,3 +22,43 @@ export const faqs = [
       a: "Yes, our list is categorized to help you find software solutions tailored to your specific needs.",
     },
   ];
+
+
+  export const web3_custom = new Web3(
+    new Web3.providers.HttpProvider(
+      "https://data-seed-prebsc-1-s1.bnbchain.org:8545/"
+    )
+  );
+
+
+
+ export const   Paxium_token=  "0xF41A19d1d8c669a387388441927316A5E16dcb34"
+ export const   Usdt =  "0x2349403DE449b34270fb53779509dF309fca37aF"
+ export const   ICO_Address =  "0x37f8ef6904D3f7EB81800A2F25ac1bF6e7bd0F30"
+
+ export const defaultChain = 97
+
+
+
+
+ export const Get_TokenBalabce_abi = [
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "account",
+        type: "address",
+      },
+    ],
+    name: "balanceOf",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+];

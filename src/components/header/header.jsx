@@ -1,11 +1,27 @@
 import './header.css'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Paxium from '../../assets/Paxium.png'
+import { useAccount, useDisconnect, useNetwork, useSwitchNetwork } from 'wagmi'
+import { defaultChain } from '../../utils/constants'
 
 const Header = () => {
+
+    const { chains, error, isLoading, pendingChainId, switchNetwork } =
+    useSwitchNetwork()
+    const { chain } = useNetwork()
+
+    useEffect(() => {
+        if (chain && chain.id !== defaultChain) {
+          switchNetwork?.(defaultChain);
+        }
+      }, [chain, switchNetwork]);
+
     const [sidebarDisplay, setSidebarDisplay] = useState('')
     const [sidebarWidth, setSidebarWidth] = useState('')
+    const { disconnect } = useDisconnect();
+
+    const { address, isConnecting, isDisconnected ,connector  } = useAccount();
 
     const sidebarHandle = (key) => {
         switch (key) {
@@ -51,7 +67,7 @@ const Header = () => {
                                 <div></div>
                             </div>
                             <Link style={{color:"white"}}>About</Link>
-                            <Link style={{color:"white"}}>Key Projects</Link>
+       
                             <Link style={{color:"white"}}>WhitePaper</Link>
                             <Link style={{color:"white"}}>Tokenomics</Link>
                             <Link style={{color:"white"}}>FAQs</Link>
@@ -62,7 +78,26 @@ const Header = () => {
                         
                         
                     </div>
-                    <button className='header-btn'>Connect Wallet</button>
+                  
+{
+  address ? 
+  <div style={{display:'flex'}}>
+   <p style={{margin:'auto' , marginRight:'10px'}}>
+                            {
+                                address.slice(0,4)+'...'+address.slice(-4)
+                            }
+                         </p>
+  <button  onClick={()=>{
+    disconnect(); 
+    window.location.reload();
+  }} className='header-btn'> Disconnect </button> 
+  </div>
+  :<w3m-connect-button />
+}
+                    
+
+
+
                 </div>
             </div>
         </div>
