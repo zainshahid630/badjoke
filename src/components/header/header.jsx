@@ -52,6 +52,7 @@ const Header = () => {
                         <div></div>
                         <div></div>
                         <div></div>
+                        
                     </div>
                     <div className="header-left">
                         <div className="header-logo">
@@ -68,9 +69,28 @@ const Header = () => {
                             </div>
                             <Link style={{color:"white"}}>About</Link>
        
-                            <Link style={{color:"white"}}>WhitePaper</Link>
+                            <Link to="/Whitepaper.pdf"  target="_blank" style={{color:"white"}}>WhitePaper</Link>
                             <Link style={{color:"white"}}>Tokenomics</Link>
                             <Link style={{color:"white"}}>FAQs</Link>
+
+                            <div className='mobile-View'>
+                            {
+  address ? 
+  <div style={{display:'flex'}}>
+   <p style={{margin:'auto' , marginRight:'10px'}}>
+                            {
+                                address.slice(0,4)+'...'+address.slice(-4)
+                            }
+                         </p>
+  <button  onClick={()=>{
+    disconnect(); 
+    window.location.reload();
+  }} className='header-btn'> Disconnect </button> 
+  </div>
+  :<w3m-connect-button />
+}
+                            </div>
+
                             <div>
                             </div>
                              
@@ -78,7 +98,8 @@ const Header = () => {
                         
                         
                     </div>
-                  
+
+<div className='mobile-View-web'>                 
 {
   address ? 
   <div style={{display:'flex'}}>
@@ -94,6 +115,7 @@ const Header = () => {
   </div>
   :<w3m-connect-button />
 }
+</div> 
                     
 
 

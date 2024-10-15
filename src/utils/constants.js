@@ -26,17 +26,22 @@ export const faqs = [
 
   export const web3_custom = new Web3(
     new Web3.providers.HttpProvider(
-      "https://data-seed-prebsc-1-s1.bnbchain.org:8545/"
+      "https://bsc-dataseed1.bnbchain.org/"
     )
   );
 
 
 
- export const   Paxium_token=  "0xF41A19d1d8c669a387388441927316A5E16dcb34"
- export const   Usdt =  "0x2349403DE449b34270fb53779509dF309fca37aF"
- export const   ICO_Address =  "0x37f8ef6904D3f7EB81800A2F25ac1bF6e7bd0F30"
+ export const   Paxium_token=  "0x55b4331de5F63Be355E2039CBB11D12d0Fcff7F1"
+ export const   Usdt =  "0x55d398326f99059fF775485246999027B3197955"
+ export const   ICO_Address =  "0x9554E202DB2610Dc8AE6daA7581E694EF2FA2E6d"
 
- export const defaultChain = 97
+ export const    Telegram_link  = 'https://t.me/PaxiumPresale'
+ export const    twitter_link  = 'https://x.com/IcoTokenPresale'
+
+ export const CHAINBASE_API_KEY = "2nQ6IPp753GxadtIlXrpFJMVMJw"
+
+ export const defaultChain = 56
 
 
 

@@ -25,8 +25,8 @@ const Fundingbonus = () => {
           Peace, Unity, Integrity, and Hope for All.
         </h1>
         <p className="mt-5 text-2xl font-semibold tracking-wider text-center text-white w-[1315px] max-md:max-w-full">
-          Lorem ipsum dolor sit amet consectetur. Gravida sit eleifend morbi faucibus ut urna. Sem urna arcu massa ultrices nec urna velit. Tincidunt nunc lobortis cursus suscipit id ultricies nec. Tellus feugiat amet massa nunc.
-        </p>
+          Next Price IN
+         </p>
         <div className="self-stretch mt-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col">
             <ClaimTokenForm />

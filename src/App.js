@@ -16,23 +16,23 @@ import { InjectedConnector } from 'wagmi/connectors/injected'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { createWeb3Modal } from '@web3modal/wagmi/react';
 
-import { arbitrum,  mainnet, polygon, optimism ,bscTestnet } from 'viem/chains'
+import { arbitrum,  mainnet, polygon, optimism ,bsc } from 'viem/chains'
 import { ToastContainer } from 'react-toastify';
 
 
 function App() {
    const projectId = 'b7886983b85653378b1c43f0172c978e'
-    const FE_URL = 'https://notbonk.xyz/'
+    const FE_URL = 'https://paxium.site/'
      const WalletIcon = 'https://avatars.githubusercontent.com/u/37784886'
   const { chains, publicClient } = configureChains(
-    [bscTestnet],
+    [bsc],
     [publicProvider(),walletConnectProvider({ projectId })]
   );
 
   // Metadata for Web3Modal
   const metadata = {
-    name: 'Notbonk',
-    description: 'A decentralized algorithmic crypto trading platform',
+    name: 'Paxium',
+    description: 'Paxium - A Global Call for Peace and Unity',
     url: FE_URL,
     icons: [WalletIcon],
   };
