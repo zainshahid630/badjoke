@@ -444,6 +444,7 @@
   background: rgba(0, 0, 0, 0.3);
   border-radius: 14px;
   padding: 7px 14px;
+  align-items: center;
 
 }
 

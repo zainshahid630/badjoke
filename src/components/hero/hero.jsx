@@ -58,7 +58,7 @@ const FundingHero = () => {
   const refreshData = () => {
     GetBalanceOfPaxium(address).then((value) => {
       setbalanceOfPaxium(value / 10 ** 18)
-      
+
 
     }).catch(() => {
 
@@ -72,17 +72,16 @@ const FundingHero = () => {
     }).catch(() => {
 
     })
-    if ( location.refAddress)
-    {
-    const value =location.refAddress;
-    const regex = /(0x[a-fA-F0-9]{40})/; // Regular expression for Ethereum address
-    const match = value.match(regex); // Match the address
-    if (match) {
-      setRefAddress(match[0]); // Set the address if found
-    } else {
-      setRefAddress(''); // Reset if no valid address is found
+    if (location.refAddress) {
+      const value = location.refAddress;
+      const regex = /(0x[a-fA-F0-9]{40})/; // Regular expression for Ethereum address
+      const match = value.match(regex); // Match the address
+      if (match) {
+        setRefAddress(match[0]); // Set the address if found
+      } else {
+        setRefAddress(''); // Reset if no valid address is found
+      }
     }
-  }
     // setRefAddress(location.refAddress)
 
     GetBalanceOfPaxium(address).then((value) => {
@@ -117,7 +116,7 @@ const FundingHero = () => {
   const [usdtAmount, setUsdtAmount] = useState("");
   const [bjAmount, setBjAmount] = useState("");
   const [AmountForBuy, setAmountForBuy] = useState()
-  const [getCurrentPrice , setCurrentPrice]  = useState()
+  const [getCurrentPrice, setCurrentPrice] = useState()
   const bjRate = 0.000294;
   const remainingBJ = 5000;
   const TotalBJ = 100000;
@@ -125,12 +124,12 @@ const FundingHero = () => {
   const formattedPercentage = percentage.toFixed(2);
   const [claimHistory, setclaimHistory] = useState()
   const [RefAddress, setRefAddress] = useState()
-  const [unixTIme ,setunixTIme ] = useState()
+  const [unixTIme, setunixTIme] = useState()
 
   const [TotalSlots, setTotalSlots] = useState()
   const [balanceOfPaxium, setbalanceOfPaxium] = useState()
-  const [TotalRaisedinusdt, settotalRaisedINUSDT] = useState() 
-  const [TotalHolders , SetTotalHolders  ] = useState()
+  const [TotalRaisedinusdt, settotalRaisedINUSDT] = useState()
+  const [TotalHolders, SetTotalHolders] = useState()
 
 
   const checkBalanceAndReload = (address) => {
@@ -151,29 +150,29 @@ const FundingHero = () => {
 
   useState(() => {
 
-    getRemainingTimeForNextPriceChange().then((remaining)=>{
-                console.log( remaining ,'remaining' )
-                setunixTIme(  parseInt(  remaining ) )
-    }).catch(()=>{
+    getRemainingTimeForNextPriceChange().then((remaining) => {
+      console.log(remaining, 'remaining')
+      setunixTIme(parseInt(remaining))
+    }).catch(() => {
 
     })
-    GetTokenHolders(56,Paxium_token).then((test)=>{
-   console.log('test',test.count)
-   SetTotalHolders(test.count  )
-    }).catch(()=>{
+    GetTokenHolders(56, Paxium_token).then((test) => {
+      console.log('test', test.count)
+      SetTotalHolders(test.count)
+    }).catch(() => {
 
     })
-    GetBalanceOfUSDT(ICO_Address).then((balanceOfUsdt)=>{
-      settotalRaisedINUSDT(  ( balanceOfUsdt / 10 ** 18  )  + 150.87 )
+    GetBalanceOfUSDT(ICO_Address).then((balanceOfUsdt) => {
+      settotalRaisedINUSDT((balanceOfUsdt / 10 ** 18) + 150.87)
 
-    }).catch(()=>{
+    }).catch(() => {
 
     })
-    GetPriceOfPaxium().then((price)=>{
-      console.log(price,'setCurrentPrice')
-      setCurrentPrice(price / 10 ** 18 )
+    GetPriceOfPaxium().then((price) => {
+      console.log(price, 'setCurrentPrice')
+      setCurrentPrice(price / 10 ** 18)
 
-    }).catch(()=>{
+    }).catch(() => {
 
     })
     GetBalanceOfUSDT(address).then((balanceOfUsdt) => {
@@ -202,12 +201,12 @@ const FundingHero = () => {
     })
 
 
-  }, [address, location, isConnecting ])
+  }, [address, location, isConnecting])
 
   useState(() => {
     GetBalanceOfPaxium(address).then((value) => {
       setbalanceOfPaxium(value / 10 ** 18)
-      
+
 
     }).catch(() => {
 
@@ -278,7 +277,7 @@ const FundingHero = () => {
 
   useEffect(() => {
     // const targetDate = new Date().getTime() + 3 * 24 * 60 * 60 * 1000; // 3 days from now
-    const targetDate = new Date(unixTIme ); // Convert to milliseconds
+    const targetDate = new Date(unixTIme); // Convert to milliseconds
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -312,39 +311,39 @@ const FundingHero = () => {
         </p>
       </div>
       <p className="FundingHero-peace">
-      Peaceful Alliance eXchange for Universal Integrity and Unity Movement
+        Peaceful Alliance eXchange for Universal Integrity and Unity Movement
       </p>
-      <p style={{textAlign:'center' , fontSize:'18px'}}>
-      Paxium, standing for the Peaceful Alliance eXchange for Universal Integrity and Unity Movement, is not just a token—it is a global call for peace and unity. Paxium is not a meme token, nor a "shitcoin"; it is an issue token addressing one of the world's greatest challenges: conflict and war.
+      <p style={{ textAlign: 'center', fontSize: '18px' }}>
+        Paxium, standing for the Peaceful Alliance eXchange for Universal Integrity and Unity Movement, is not just a token—it is a global call for peace and unity. Paxium is not a meme token, nor a "shitcoin"; it is an issue token addressing one of the world's greatest challenges: conflict and war.
       </p>
 
- <div className="mt-4" />
-      <p style={{textAlign:'center' , fontSize:'18px'}}>
-      Hold Paxium and be one with those who are against war.
+      <div className="mt-4" />
+      <p style={{ textAlign: 'center', fontSize: '18px' }}>
+        Hold Paxium and be one with those who are against war.
       </p>
 
 
 
 
       <div>
-      <p className="FundingHero-lorum" style={{fontSize: '28px', fontWeight: 'bold'}}>
-        Next Price IN
-      </p>
- <MyComponent unixTime={unixTIme} />
-    </div>
-    <p className="FundingHero-lorum" style={{ fontWeight: 'bold'}}>
-      Current Price = {getCurrentPrice } USDT 
+        <p className="FundingHero-lorum" style={{ fontSize: '28px', fontWeight: 'bold' }}>
+          Next Price IN
+        </p>
+        <MyComponent unixTime={unixTIme} />
+      </div>
+      <p className="FundingHero-lorum" style={{ fontWeight: 'bold' }}>
+        Current Price = {getCurrentPrice} USDT
 
       </p>
-      <p className="FundingHero-lorum"style={{ fontWeight: 'bold'}}>
-     Total Raised In USDT = {TotalRaisedinusdt} USDT
-      
+      <p className="FundingHero-lorum" style={{ fontWeight: 'bold' }}>
+        Total Raised In USDT = {TotalRaisedinusdt} USDT
+
       </p>
-      <p className="FundingHero-lorum"style={{ fontWeight: 'bold'}}>
-      NO. Of Holders = {TotalHolders?.toString()} 
-      
+      <p className="FundingHero-lorum" style={{ fontWeight: 'bold' }}>
+        NO. Of Holders = {TotalHolders?.toString()}
+
       </p>
-     
+
       <br />
       <br />
 
@@ -360,30 +359,52 @@ const FundingHero = () => {
                   <>
                     <div className="FundingHero-box-header">
                       <p className="FundingHero-box-title">Paxium  Balance</p>
-                      <p className="FundingHero-box-number">{ parseFloat( balanceOfPaxium ).toFixed(2)} Pax</p>
+                      <p className="FundingHero-box-number">{parseFloat(balanceOfPaxium).toFixed(2)} Pax</p>
                     </div>
                     <div className="mt-4" />
                     <div className="FundingHero-box-header">
                       <p className="FundingHero-box-title">Referral Gains  </p>
-                      <p className="FundingHero-box-number">{ parseFloat( claimHistory?.totalEarned  / 10 ** 18).toFixed(2) } Pax</p>
+                      <p className="FundingHero-box-number">{parseFloat(claimHistory?.totalEarned / 10 ** 18).toFixed(2)} Pax</p>
                     </div>
                     <div className="mt-4" />
-                    <div className="FundingHero-box-header">
-                      <p className="FundingHero-box-title">Your Referral Link  </p>
+                    <div>
+                      {/* <p className="FundingHero-box-title">Your Referral Link  </p>
                       <p className="FundingHero-box-number">
-      <CopyToClipboard
-        text={`https://Paxium.site/${address}`}
-        onCopy={handleCopySuccess}
-      >
-        <FaCopy
-          style={{ cursor: 'pointer' }}
-          title="Copy"
-          onClick={handleCopyError}
-        />
-      </CopyToClipboard>
-    </p>  
-    <div></div>
+                        <CopyToClipboard
+                          text={`https://Paxium.site/${address}`}
+                          onCopy={handleCopySuccess}
+                        >
+                          <FaCopy
+                            style={{ cursor: 'pointer' }}
+                            title="Copy"
+                            onClick={handleCopyError}
+                          />
+                        </CopyToClipboard>
+                      </p> */}
+                      <div className="FundingHero-box-header">
+                        <div style={{display:"flex" , flexDirection:"column"}}>
+                          <p className="FundingHero-box-title">
+                            Your Referral Link
+                          </p>
+                          <p>address text</p>
+                        </div>
+
+
+                        <CopyToClipboard
+                          text={`https://Paxium.site/${address}`}
+                          onCopy={handleCopySuccess}
+                        >
+                          <FaCopy
+                            style={{ cursor: 'pointer' }}
+                            title="Copy"
+                            onClick={handleCopyError}
+                          />
+                        </CopyToClipboard>
+                      </div>
+
+                      <div></div>
                     </div>
+
 
                   </>
                 }
@@ -411,12 +432,12 @@ const FundingHero = () => {
                 />
 
                 <p className="paste-text">Enter Amount</p>
-                <div style={{display:'flex' , justifyContent:'space-between'}}>
-                <p>  USDT Balance  : { parseFloat( balanceOfUsdt ).toFixed(2)  } </p>
-                {/* <p>  Curr   : { balanceOfUsdt  } </p> */}
-                
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <p>  USDT Balance  : {parseFloat(balanceOfUsdt).toFixed(2)} </p>
+                  {/* <p>  Curr   : { balanceOfUsdt  } </p> */}
+
                 </div>
-               
+
                 <input
                   type="number"
                   value={AmountForBuy}
@@ -503,8 +524,8 @@ const FundingHero = () => {
                         ClaimTokenAirDrop().then(() => {
                           // setclaimLoader(false)
                           checkBalanceAndReload(address
-                        )
-                  
+                          )
+
                           // window.location.reload()
                         }).catch(() => {
                           setclaimLoader(false)
@@ -570,16 +591,16 @@ const FundingHero = () => {
 
       <div className="FundingHero-images-link">
 
-        <img src={telegram} alt="Telegram" onClick={()=>{
+        <img src={telegram} alt="Telegram" onClick={() => {
 
           window.open(Telegram_link, "_blank")
 
         }} />
-            <img src={twitter} alt="Telegram" onClick={()=>{
+        <img src={twitter} alt="Telegram" onClick={() => {
 
-window.open(twitter_link, "_blank")
+          window.open(twitter_link, "_blank")
 
-}} />
+        }} />
         {/* <img src={instagram} alt="Instagram" /> */}
       </div>
     </div>
